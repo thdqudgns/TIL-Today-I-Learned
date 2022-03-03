@@ -176,29 +176,29 @@
 
 * **자바의 기본 데이터타입**
     - 자바에서 데이터를 표현하는 8가지 방식
-    - 정수형 타입 (소수점 이하를 표현하지 않는 숫자 형식)
-	    1. byte     1Byte	-128 ~ 127
-	    2. short    2Bytes	-32768 ~ 32767
-	    3. **int**  4Bytes	약 -21억 ~ 약 21억 => **(정수형 기본 데이터타입)**
-	    4. long     8Bytes	약 -900경 ~ 약 900경
-    - 실수형 타입 (소수점 이하를 표현하는 숫자 형식)
-	    5. float    4Bytes
-	    6. **double**   8Bytes => **(실수형 기본 데이터타입)**
-    - 논리형 타입
-	    7. **boolean**  1Byte	true / false **(논리형 기본 데이터타입)**
+    - 정수형 타입 (소수점 이하를 표현하지 않는 숫자 형식)   
+	    1 byte     1Byte	-128 ~ 127   
+	    2 short    2Bytes	-32768 ~ 32767   
+	    3 **int**  4Bytes	약 -21억 ~ 약 21억 => **(정수형 기본 데이터타입)**   
+	    4 long     8Bytes	약 -900경 ~ 약 900경
+    - 실수형 타입 (소수점 이하를 표현하는 숫자 형식)   
+        5 float    4Bytes   
+	    6 **double**   8Bytes => **(실수형 기본 데이터타입)**
+    - 논리형 타입   
+	    7 **boolean**  1Byte	true / false **(논리형 기본 데이터타입)**   
     (true:참, false:거짓)
-    - 문자형 타입
-	    8. **char**     2Bytes => **(문자형 기본 데이터타입)**
+    - 문자형 타입   
+	    8 **char**     2Bytes => **(문자형 기본 데이터타입)**   
 	문자형은 컴퓨터에서 정수형 타입으로 처리된다.
 	코드화 시킨 문자체계(매핑표)를 적용해서 인식/사용한다.
 	자바는 유니코드(Unicode)를 사용한다.
-	- **ASCII코드 American Standard Code for Information Interchange**
-	 -> 영어 대소문자, 숫자, 특수기호, 가상키를 1:1로 매핑(mapping)한 표
+	- **ASCII코드 American Standard Code for Information Interchange**   
+	 -> 영어 대소문자, 숫자, 특수기호, 가상키를 1:1로 매핑(mapping)한 표   
 	 -> 한글 없음
-	- **유니코드 Unicode**
-	 -> ASCII로만 표현할 수 없는 전세계 문자를 매핑한 표
-	 -> 유니코드는 변환과정(인코딩)을 거쳐 사용한다
-	 -> 한글 인코딩 방식은 UTF-8, EUC-KR, CP949(MS949)
+	- **유니코드 Unicode**   
+	 -> ASCII로만 표현할 수 없는 전세계 문자를 매핑한 표   
+	 -> 유니코드는 변환과정(인코딩)을 거쳐 사용한다   
+	 -> 한글 인코딩 방식은 UTF-8, EUC-KR, CP949(MS949)   
 	 -> 주로 UTF-8을 사용한다
 
 * **변수, Variables**
