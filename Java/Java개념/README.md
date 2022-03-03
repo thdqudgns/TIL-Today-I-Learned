@@ -96,10 +96,8 @@
     -> 개발된 소스코드를 관리하는 폴더라고 생각하면 된다
     - File - New - Java Project 선택
     - 프로젝트 이름 Test로 작성 (첫글자 대문자로 작성)
-    - src폴더 우클릭, New - Package 선택
-    - simple 입력, Finish (첫글자 소문자)
-    - simple 패키지 우클릭, New - Class 선택
-    - Hello 입력, Finish (첫글자 대문자)
+    - src폴더 우클릭, New - Package 선택 - simple 입력, Finish (패키지는 첫글자 소문자)
+    - simple 패키지 우클릭, New - Class 선택 - Hello 입력, Finish (클래스는 첫글자 대문자)
     - 기존 코드 그대로 유지하며 아래와 같이 작성
     ```java
     package simple;
