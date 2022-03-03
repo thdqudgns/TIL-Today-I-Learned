@@ -116,6 +116,7 @@
     - 저장 (단축키 ctrl + s)
     - 실행 (단축키 ctrl + F11)
     - 하단 Console뷰(탭)에서 'Hello Java' 문구 출력 확인
+---
 
 ### :pushpin: 기본 개념
 
