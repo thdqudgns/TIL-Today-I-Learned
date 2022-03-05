@@ -139,7 +139,7 @@
 * **자바 프로그램 개발(실행) 과정**
     ```java
     소스코드 작성 --컴파일--> 바이트코드  --실행--> JVM
-	   ".java"   --compile--> ".class"  --run--> "JVM"
+	   .java     --compile--> .class    --run--> JVM
 	(Source Code)   ---->   (Byte Code)   ---->  (Java Virtual Machine)
     ```
     - 고급언어(Java코드)를 저급언어(바이트코드)로 번역하는 과정을 컴파일(Compile)이라고 한다
