@@ -128,7 +128,7 @@ public class UtilityClass {
 * 긴급한 작업(time-critical)을 종료자 안에서 처리하면 안 된다.
 * 중요 상태 정보(critical persistent state)는 종료자로 갱신하면 안 된다.
 * 종료자를 사용하면 프로그램 성능이 심각하게 떨어진다.
-* **명시적 종료 메서드(termination method)**를 하나 정의하고 사용하라.
+* **명시적 종료 메서드(termination method)** 를 하나 정의하고 사용하라.
 
 ---
 
