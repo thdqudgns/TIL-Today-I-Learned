@@ -439,7 +439,7 @@
         ```java
        	new 데이터타입[개수]
 
-        ex)	int[] arr; //배열 변수 선언
+        ex) int[] arr; //배열 변수 선언
             arr = new int[10]; //배열 생성
             
         ** 배열의 크기(길이)(size, length)는 양수로 지정해야만 한다 ">=1"
