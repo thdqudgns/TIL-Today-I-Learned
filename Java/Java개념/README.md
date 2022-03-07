@@ -4,6 +4,7 @@
 * [준비사항](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/Java/Java%EA%B0%9C%EB%85%90#pushpin-%EC%A4%80%EB%B9%84%EC%82%AC%ED%95%AD)
 * [기본개념](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/Java/Java%EA%B0%9C%EB%85%90#pushpin-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90)
 * [Java의 시작](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/Java/Java%EA%B0%9C%EB%85%90#pushpin-java%EC%9D%98-%EC%8B%9C%EC%9E%91)
+* [Java의 시작2](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/Java/Java%EA%B0%9C%EB%85%90#pushpin-java%EC%9D%98-%EC%8B%9C%EC%9E%912)
 
 ### :pushpin: 준비사항
 
@@ -993,6 +994,8 @@ ex)
     - 사용 목적
         1. 상수들의 모음집 : 상수들만 따로 관리하기 위해 사용한다
         2. 메소드 개발 가이드 : 개발해야하는 메소드의 형식을 강제할 수 있다
+
+---
 
 ### :pushpin: Java의 시작2
 :bulb: **API, Application Programming Interface**
