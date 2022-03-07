@@ -1279,26 +1279,20 @@ ex)
 public void print(int data) {
   System.out.println("데이터 : " + data);
 }
-
 public void print(double data) {
   System.out.println("데이터 : " + data);
 }
-
 public void print(Point data) {
   System.out.println("데이터 : " + data);
 }
-
 public void print(float data) {
   System.out.println("데이터 : " + data);
 }
-
 -> 같은 이름, 같은 동작을 하는 코드를 "데이터타입"만 다르게 여러 개 작성됨
 ---------------------------------
-
 public <T> void print(T data) {
   System.out.println("데이터 : " + data);
 }
-
 -> 데이터타입을 일반화시켜 표현하고 중복으로 작성되는 코드를 줄인다
 ```
 * :bulb: **제네릭, Generic**
@@ -1362,18 +1356,12 @@ public <T> void print(T data) {
     - try ~ catch 구문
     ```java
     try {
-
 	  //예외가 발생할만한 코드
-
 	} catch( Exception e ) { //발생할 예외 클래스로 적는 게 좋다
-
 	  //예외 처리 코드 작성
-
 	} finally {
-
 	  //예외 발생 유무에 상관없이 무조건 실행되는 코드를 작성한다
 	  //생략 가능한 블록
-
 	}
     ```
 * :bulb: **throw 키워드**
