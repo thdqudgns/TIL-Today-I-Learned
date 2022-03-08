@@ -1490,11 +1490,11 @@ public void write(byte[] b, int off, int len) throws IOException
             ObjectOutputStream
 	    ------------------------	------------------------
 	    //바이트스트림을 문자스트림으로 변환한다
-					    InputStreamReader
-					    OutputStreamWriter
+					InputStreamReader
+					OutputStreamWriter
 	    ------------------------	------------------------
 	    //문자 출력 스트림의 기능을 강화해놓은 클래스
-					    PrintStream
+					PrintStream
 ```
 
 :bulb: **경로**
