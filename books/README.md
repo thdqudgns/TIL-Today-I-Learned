@@ -7,11 +7,11 @@
 * [대한민국 소프트웨어 성공 방정식 - 김재호]()
 
 ### :bulb: 독서 중
+* [Java의 정석 - 남궁성](https://github.com/thdqudgns/standard)
 * [Effective Java - 조슈아 블로크](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/Java/Effective%20Java)
 * [알고리즘 도감 - 이시다 모리테루, 미야자키 쇼이치](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)
 * [누구나 자료구조와 알고리즘 - 제인 웬그로우]()
 * [오픈소스로 미래를 연마하라 - 비키 브라수어]()
-* [Java의 정석 - 남궁성](https://github.com/thdqudgns/standard)
 * [생각하는 프로그래밍 - 존 벤틀리]()
 
 ### :bulb: 읽을 책
