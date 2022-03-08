@@ -1418,7 +1418,7 @@ public <T> void print(T data) {
     - ( 프로그램-->출력스트림 )
 - **FIFO구조**로 되어있다 
 - 기본적으로 **바이트 단위로 통신**한다
-- **버퍼(Buffer)**를 가지고 있다
+- **버퍼(Buffer)** 를 가지고 있다
     - 버퍼, Buffer : 데이터 임시 저장소
 * :bulb: **스트림의 분류**
     1. 입출력 구분
@@ -1490,11 +1490,11 @@ public void write(byte[] b, int off, int len) throws IOException
             ObjectOutputStream
 	    ------------------------	------------------------
 	    //바이트스트림을 문자스트림으로 변환한다
-					        InputStreamReader
-					        OutputStreamWriter
+					    InputStreamReader
+					    OutputStreamWriter
 	    ------------------------	------------------------
 	    //문자 출력 스트림의 기능을 강화해놓은 클래스
-					        PrintStream
+					    PrintStream
 ```
 
 :bulb: **경로**
