@@ -1,9 +1,9 @@
 # IT 도서 정리
 
 # 읽은 책
-* [IT 개발자의 거의 모든 것 - 이병덕]()
-* [IT 전문가로 사는 법 - 장동인]()
-* [나는 LINE 개발자입니다 - 강윤신 외 11명]()
+* [IT 개발자의 거의 모든 것 - 이병덕](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/books/IT%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98%20%EA%B1%B0%EC%9D%98%20%EB%AA%A8%EB%93%A0%20%EA%B2%83%20-%20%EC%9D%B4%EB%B3%91%EB%8D%95.md)
+* [IT 전문가로 사는 법 - 장동인](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/books/IT%20%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A1%9C%20%EC%82%AC%EB%8A%94%20%EB%B2%95%20-%20%EC%9E%A5%EB%8F%99%EC%9D%B8.md)
+* [나는 LINE 개발자입니다 - 강윤신 외 11명](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/books/%EB%82%98%EB%8A%94%20LINE%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9E%85%EB%8B%88%EB%8B%A4%20-%20%EA%B0%95%EC%9C%A4%EC%8B%A0%20%EC%99%B8%2011%EB%AA%85.md)
 * [대한민국 소프트웨어 성공 방정식 - 김재호]()
 
 # 독서 중
