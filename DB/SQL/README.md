@@ -392,11 +392,13 @@ GROUP BY colname1, colname2, colname3, ...
 4. HAVING절	- 그룹함수를 이용한 조건문 적용
 5. SELECT절	- 조회할 컬럼을 지정한다 (DISTINCT 중복 제거 가능)
 6. ORDER BY절	- 정렬
-- **작성하는 순서**   
-	SELECT      FROM   
+- **작성하는 순서**
+    ```sql
+	SELECT  FROM   
 	WHERE   
-	GROUP BY        HAVING   
+	GROUP BY    HAVING   
 	ORDER BY
+    ```
 - 수행 순서에 따라 Alias(별칭)도 적용된다
 	- SELECT절에서 지정한 Alias를 ORDER BY에서 사용할 수 **있다**
 	- SELECT절에서 지정한 Alias를 WHERE절에서 사용할 수 **없다**
