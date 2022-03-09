@@ -252,10 +252,10 @@ WHERE 컬럼명 연산자 조건값
 - TO_NUMBER : NUMBER포맷의 VARCHAR2 -> NUMBER
 - TO_DATE : DATE포맷의 VARCHAR2 -> DATE
 ```sql
-		    TO_CHAR(number)		      TO_DATE
+		    TO_CHAR(number)		    TO_DATE
 	숫자	 ----------->	문자		---------->	날짜
 	(NUMBER) <-----------	(VARCHAR2)	<----------	(DATE)
-		    TO_NUMBER			      TO_CHAR(date)
+		    TO_NUMBER			    TO_CHAR(date)
 ```
 #### TO_CHAR(number)
 - NUMBER -> VARCHAR2 변환
@@ -392,7 +392,7 @@ GROUP BY colname1, colname2, colname3, ...
 4. HAVING절	- 그룹함수를 이용한 조건문 적용
 5. SELECT절	- 조회할 컬럼을 지정한다 (DISTINCT 중복 제거 가능)
 6. ORDER BY절	- 정렬
-- **작성하는 순서**
+- **작성하는 순서**   
 	SELECT   
 	FROM   
 	WHERE   
