@@ -1,6 +1,6 @@
-# DB 준비
+# :pushpin: DB 준비
 
-### 오라클 DB 설치하기
+### :bulb: 오라클 DB 설치하기
 - 오라클 Database 11g R2 Express Edition 사용
 - www.oracle.com 접속
 - Products 메뉴 - Software항목에서 Oracle Database 클릭
@@ -13,7 +13,7 @@
 - 중요!! 설치하면서 비밀번호 1234 로 입력할 것!!
 - [직접 URL](https://www.oracle.com/database/technologies/xe-prior-releases.html)
 
-### 오라클 SQL Developer 설치하기
+### :bulb: 오라클 SQL Developer 설치하기
 - www.oracle.com 접속
 - Resources 메뉴 - Software Downloads 클릭
 - Deloper Tools 항목 확인
@@ -23,11 +23,11 @@
 - sqldeveloper.exe 실행
 - [직접 URL](https://www.oracle.com/tools/downloads/sqldev-downloads.html)
 
-### 파일 위치
+### :bulb: 파일 위치
 - C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin
 - (맥 OS - @$ORACLE_HOME/rdbms/admin/)
 
-### scott.sql 적용하기 (scott.sql : 테스트용 데이터 파일)
+### :bulb: scott.sql 적용하기 (scott.sql : 테스트용 데이터 파일)
 - 윈도우 콘솔창(cmd창) 열기
 - sqlplus /nolog 입력
 - conn system/1234;
@@ -38,7 +38,7 @@
 - show user; -> USER is "SCOTT" 으로 나오면 성공
 - SELECT * FROM dept; -> 테스트용 부서 정보가 조회됨
 
-### SQL Developer에서 데이터베이스 접속
+### :bulb: SQL Developer에서 데이터베이스 접속
 - 파일 메뉴 - 새로만들기
 - General - 접속선택
 - 데이터베이스 접속 선택 - 확인
@@ -49,14 +49,14 @@
 - 테스트 -> "상태:성공" 뜨는 거 확인 - 접속
 - 다음부터는 접속탭에서 "WEB" 더블클릭만 하면 접속됨 -> 우클릭 메뉴에도 있음
 
-### 비밀번호 바꾸는 코드
+### :bulb: 비밀번호 바꾸는 코드
 - conn system/1234
 - ALTER USER [계정명] IDENTIFIED BY [비밀번호];
 ```sql
     ex)	ALTER USER scott IDENTIFIED BY tiger;
 ```
 
-### LOCK 걸린 계정 풀기
+### :bulb: LOCK 걸린 계정 풀기
 - 비밀번호를 여러 번 틀리면 계정 LOCK걸림
 - conn system/1234
 - ALTER USER [계정명] ACCOUNT UNLOCK;
@@ -64,7 +64,7 @@
 	ex) ALTER USER scott ACCOUNT UNLOCK;
 ```
 
-### 컴퓨터 부팅할 때 서비스 자동으로 켜지지않게 만들기
+### :bulb: 컴퓨터 부팅할 때 서비스 자동으로 켜지지않게 만들기
 - win키 + r (실행) 열기
 - services.msc 입력 (또는 시작 메뉴에서 "서비스" 입력)
 - 윈도우 서비스 확인 설정창
@@ -73,7 +73,7 @@
 - 위 두 서비스 항목의 시작유형을 "수동"으로 변경 -> 컴퓨터 부팅할 때 자동으로 실행 안 됨
 - 부팅 이후에 시작메뉴에서 "Start Database" 프로그램을 이용해 수동으로 직접 오라클을 켜야 사용 가능
 
-### 리스너 설정 파일 위치
+### :bulb: 리스너 설정 파일 위치
 - 작업 전에 .ora 파일들 백업 필수!
 - C:\oraclexe\app\oracle\product\11.2.0\server\network\ADMIN
   > listener.ora
@@ -85,11 +85,11 @@
 - 호스트네임 확인은 cmd창(콘솔)에서 hostname 입력 ex) DESKTOP-7H5UIAM
 - 호스트 항목 변경 후에는 오라클 서비스 종료, 재시작 필요
 
-### SqlDeveloper 글꼴 바꾸기
+### :bulb: SqlDeveloper 글꼴 바꾸기
 - 도구 - 환경설정 메뉴
 - 코드 편집기 항목 - 글꼴
 
-### 오라클 클라이언트 툴(Tool)
+### :bulb: 오라클 클라이언트 툴(Tool)
 - 오라클 데이터베이스 서버에 접속하여 DB에 대한 작업을 수행하는 도구 (프로그램)
 1. SQL*Plus
 	- Oracle 데이터베이스에느 제공하는 기본 Tool

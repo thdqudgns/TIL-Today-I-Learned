@@ -1,16 +1,16 @@
-# DB SQL
+# :pushpin: DB SQL
 
-### DBMS, DataBase Management System
+### :bulb: DBMS, DataBase Management System
 - 데이터베이스 관리 시스템
 - Oracle DB, MS-SQL, MySql, MongoDB, SQLite, CUBRID 등등
 
-### 데이터베이스, Database, DB
+### :bulb: 데이터베이스, Database, DB
 - 데이터 저장소
 - 체계적인 데이터를 저장하는 시스템
 - 여러 종류의 클라이언트들이 공유하면서 사용할 목적으로 관리되는 데이터의 통합 정보 관리 시스템
 - 데이터베이스 내부에 테이블(Table)들을 만들어서 데이터를 관리한다
 
-### 내가 사용하는 오라클 DB 상황
+### :bulb: 내가 사용하는 오라클 DB 상황
 - 버전: Oracle Database 11g Release 2
 - 제품군: Express Edition (Standard Edition, Enterprise Edition, Standard One Edition도 존재)
 - Express Edition(XE)에는 데이터베이스가 한 개만 존재한다
@@ -19,7 +19,7 @@
 - SID : orcl
 - Enterprise Edition에는 DB가 여러 개
 
-### 테이블, Table, TB
+### :bulb: 테이블, Table, TB
 - DB 내에서 실제 데이터를 저장하고 관리하는 단위
 - 표 형식으로 데이터를 관리한다
 - 테이블은 소유자(Owner)를 가지고 있다
@@ -29,7 +29,7 @@
 - DBA계정(시스템 계정, 관리자 계정)은 권한에 상관없이 소유권에 상관없이 모든 객체를 관리할 수 있다 -> 최대한 사용하지 않도록 한다
 - 오라클DB의 기본 DBA계정 : SYS, SYSTEM (DBA, DataBase Administrator)
 
-### SQL, Structured Query Language
+### :bulb: SQL, Structured Query Language
 - 구조적 질의 언어
 - 자료의 검색(조회), 관리, DB객체 생성, 수정, 관리, 삭제 등을 수행하는 언어
 - 주로 CRUD작업을 수행하는 명령어들이다 (Create, Read, Update, Delete)
@@ -37,7 +37,7 @@
 	- 코드를 읽어서 곧바로 실행된다
 	- 인터프리트 언어
 
-### SQL의 용도에 따른 분류
+### :bulb: SQL의 용도에 따른 분류
 #### 1. DML, Data Manipulation Langauge
 - 데이터 조작어
 - 테이블의 데이터를 조작(CRUD, 조회, 삽입, 변경, 삭제)하는 명령어
@@ -64,10 +64,10 @@
 - 트랜잭션 관련 명령어 - **COMMIT, ROLLBACK**
 - TCL, Transaction Control Language
 
-### 오라클 11gR2 SQL 레퍼런스
+### :bulb: 오라클 11gR2 SQL 레퍼런스
 [URL](https://docs.oracle.com/cd/E11882_01/server.112/e41084/toc.htm)
 
-### SELECT 구문 - DML, DQL(Data Query Language)
+### :bulb: SELECT 구문 - DML, DQL(Data Query Language)
 - 테이블에 저장된 데이터를 조회할 때 사용하는 명령어
 - 반드시 FROM절이 뒤에 따라 와야한다
     - **구문 형식**
@@ -98,7 +98,7 @@
         - 한글, 영어, 숫자 전부 사용 가능하다
         - 컬럼명과 테이블명을 단순화하거나 명확하게할 때 사용한다
 
-### WHERE 절
+### :bulb: WHERE 절
 - 조건절, 조건에 만족하는 데이터만(행) 조회되거나 처리되도록 설정한다
 - SELECT, UPDATE, DELETE 구문에서 사용된다
 - 형식
@@ -109,7 +109,7 @@ WHERE 컬럼명 연산자 조건값
     ex)	WHERE ename = 'SMITH'
 ```
 
-### 연산자
+### :bulb: 연산자
 - **비교(관계) 연산자**
 ```sql
 	=	같다
@@ -167,7 +167,7 @@ WHERE 컬럼명 연산자 조건값
 	ex)	comm IS NOT NULL
     ```
 
-### DB 조회(탐색) 방법, Scan
+### :bulb: DB 조회(탐색) 방법, Scan
 #### 전체 탐색, Full Scan
 - 테이블의 처음부터 끝까지 전부 확인하며 탐색하는 방법
 - 시간이 오래걸린다
@@ -179,7 +179,7 @@ WHERE 컬럼명 연산자 조건값
     - 테이블의 대표컬럼을 지정하여 테이블과 별개로 작성한 객체
     - 테이블의 데이터를 빠르게 찾을 수 있도록 도와준다
 
-### ORDER BY 절
+### :bulb: ORDER BY 절
 - SELECT쿼리 결과를 정렬하기 위한 구문
 - WHERE절 다음에 온다
 - 기본적으로 오름차순 정렬을 한다
@@ -201,7 +201,7 @@ WHERE 컬럼명 연산자 조건값
 	** DESC NULLS LAST가 주로 사용된다
     ```
 
-### DISTINCT 키워드
+### :bulb: DISTINCT 키워드
 - 중복 데이터를 제거하는 키워드
 - SELECT 키워드와 짝꿍으로 사용된다
     - SELECT ~ FROM 구문
@@ -209,13 +209,13 @@ WHERE 컬럼명 연산자 조건값
 - 조회된 데이터(행의 모든 컬럼)가 중복되었을 때 중복을 제거하고 한 개만 보여준다
 - 모든 컬럼의 값이 같아야 행을 하나로 줄여서 조회한다
 
-### 데이터 연결 연산자, ||
+### :bulb: 데이터 연결 연산자, ||
 - 두 개의 데이터를 하나의 데이터(문자열)로 연결하여 표현하는 연산자
 - 문자열 || 문자열
 - 문자열 || 숫자
 - 문자열 || 날짜
 
-### 오라클 내장 함수(Built-In Functions)
+### :bulb: 오라클 내장 함수(Built-In Functions)
 - 오라클 SQL Functions
 - [레퍼런스 URL](https://docs.oracle.com/cd/E11882_01/server.112/e41084/functions.htm#SQLRF006)
 - **단일 행 함수, Single Row Functions**
@@ -223,13 +223,13 @@ WHERE 컬럼명 연산자 조건값
 - **그룹 함수, Group Functions**
     - 행들의 조회결과를 하나의 결과로 도출하는 함수
 
-### DUAL 테이블
+### :bulb: DUAL 테이블
 - SYS계정(관리자계정)이 소유하는 테이블
 - 오라클에서 제공하는 테스트 용 테이블
 - 조회 결과를 하나의 행으로 출력해주는 기능
 - 연산의 결과, 가상 컬럼, 함수의 결과 등을 확인할 때 사용한다 -> SQL Functions를 테스트하기 위해 사용한다
 
-### 단일 행 함수의 종류
+### :bulb: 단일 행 함수의 종류
 #### 숫자 함수, Numeric Function
 - 숫자를 매개변수로 받아서 숫자를 변환
 - Java의 Math클래스와 비슷한 역할을 한다
@@ -360,7 +360,7 @@ WHERE 컬럼명 연산자 조건값
 	END
 ```
 
-### 그룹 함수, Group Function
+### :bulb: 그룹 함수, Group Function
 - 테이블의 특정 행들을 그룹화하여 하나의 결과로 반환한다
 - 주로 테이블의 통계 처리를 수행한다
 - 계산된 결과를 하나의 값으로 반환하게 된다
@@ -385,7 +385,7 @@ GROUP BY colname1, colname2, colname3, ...
 - GROUP By 절 다음에 오는 조건절
 - 그룹함수를 이용한 조건을 설정하고 싶을 때 사용한다 -> WHERE절에서는 그룹함수를 사용할 수 없다
 
-### SELECT 구문의 실행(수행) 순서
+### :bulb: SELECT 구문의 실행(수행) 순서
 1. FROM절	- 조회하려는 대상 테이블을 설정한다
 2. WHERE절	- 조회될 행을 선택하는 조건문 적용
 3. GROUP BY절	- 그룹화 기준이 되는 컬럼 적용
@@ -403,4 +403,4 @@ GROUP BY colname1, colname2, colname3, ...
 	- SELECT절에서 지정한 Alias를 ORDER BY에서 사용할 수 있다
 	- SELECT절에서 지정한 Alias를 WHERE절에서 사용할 수 없다
 
-### 조인, JOIN (08/02)
+### :bulb: 조인, JOIN (08/02)
