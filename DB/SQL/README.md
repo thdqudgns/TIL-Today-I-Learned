@@ -70,33 +70,33 @@
 ### SELECT 구문 - DML, DQL(Data Query Language)
 - 테이블에 저장된 데이터를 조회할 때 사용하는 명령어
 - 반드시 FROM절이 뒤에 따라 와야한다
-    #### 구문 형식
-    ```sql
-        SELECT * FROM tablename;
-        -> 테이블의 모든 컬럼을 이용하여 전체 데이터(모든 행)을 조회한다
+    - **구문 형식**
+        ```sql
+            SELECT * FROM tablename;
+            -> 테이블의 모든 컬럼을 이용하여 전체 데이터(모든 행)을 조회한다
 
-        SELECT col1, col2, ... FROM tablename;
-        -> 지정한 컬럼만 이용하여 전체 데이터를 조회한다
-    ```
-    #### FROM 절
-    - 조회하려는 대상을 지정하는 절
-    - 테이블, TABLE
-    - 뷰, VIEW
-    - 인라인뷰, Inline View (서브쿼리)
-    #### SELECT 구문에서의 Alias, 별칭
-    - 조회하려는 컬럼명, 테이블명 등의 이름에 별칭을 붙일 수 있다
-    - 컬럼에 AS 키워드를 붙이고 별명을 붙이거나, 그냥 별칭을 바로 옆에 사용한다
-    ```sql
-        ex)	empno AS "사원번호"
-        ex)	empno "사번"
-    ```
-    - 테이블명 옆에 별칭을 붙여 사용한다
-    ```sql
-        ex)	FROM emp "사원정보"
-    ```
-    - ""큰따옴표로 묶어서 되고 ""큰따옴표없이 사용해도되지만 숫자나 기호가 포함되면 ""로 묶어야 한다
-    - 한글, 영어, 숫자 전부 사용 가능하다
-    - 컬럼명과 테이블명을 단순화하거나 명확하게할 때 사용한다
+            SELECT col1, col2, ... FROM tablename;
+            -> 지정한 컬럼만 이용하여 전체 데이터를 조회한다
+        ```
+    - **FROM 절**
+        - 조회하려는 대상을 지정하는 절
+        - 테이블, TABLE
+        - 뷰, VIEW
+        - 인라인뷰, Inline View (서브쿼리)
+    - **SELECT 구문에서의 Alias, 별칭**
+        - 조회하려는 컬럼명, 테이블명 등의 이름에 별칭을 붙일 수 있다
+        - 컬럼에 AS 키워드를 붙이고 별명을 붙이거나, 그냥 별칭을 바로 옆에 사용한다
+        ```sql
+            ex)	empno AS "사원번호"
+            ex)	empno "사번"
+        ```
+        - 테이블명 옆에 별칭을 붙여 사용한다
+        ```sql
+            ex)	FROM emp "사원정보"
+        ```
+        - ""큰따옴표로 묶어서 되고 ""큰따옴표없이 사용해도되지만 숫자나 기호가 포함되면 ""로 묶어야 한다
+        - 한글, 영어, 숫자 전부 사용 가능하다
+        - 컬럼명과 테이블명을 단순화하거나 명확하게할 때 사용한다
 
 ### WHERE 절
 - 조건절, 조건에 만족하는 데이터만(행) 조회되거나 처리되도록 설정한다
@@ -179,7 +179,141 @@ WHERE 컬럼명 연산자 조건값
     - 테이블의 대표컬럼을 지정하여 테이블과 별개로 작성한 객체
     - 테이블의 데이터를 빠르게 찾을 수 있도록 도와준다
 
+### ORDER BY 절
+- SELECT쿼리 결과를 정렬하기 위한 구문
+- WHERE절 다음에 온다
+- 기본적으로 오름차순 정렬을 한다
+- ASC 기능 : 오름차순, ASCENDING의 약자, 생략가능
+- DESC 기능 : 내림차순, DESCENDING의 약자
+#### ORDER BY 구문 형식
+- ORDER BY 기준컬럼명1, 기준컬럼명2, ...   
+-> 기준컬럼마다 ASC 또는 DESC를 적용할 수 있다
+#### NULL을 포함하는 컬럼에 대한 정렬
+- 오름차순(ASC) 정렬일 경우 NULL이 마지막에 나온다
+- 내림차순(DESC) 정렬일 경우 NULL이 처음에 나온다
+- NULL 데이터의 정렬 순서를 변경하려면 NULLS 키워드를 사용한다
+    - NULLS FIRST : NULL데이터를 처음에 보이도록 정렬한다
+	- NULLS LAST : NULL데이터를 마지막에 보이도록 정렬한다
+    ```sql
+	ex)	ORDER BY comm DESC NULLS LAST
+	ex)	ORDER BY comm ASC NULLS FIRST
 
+	** DESC NULLS LAST가 주로 사용된다
+    ```
 
+### DISTINCT 키워드
+- 중복 데이터를 제거하는 키워드
+- SELECT 키워드와 짝꿍으로 사용된다
+    - SELECT ~ FROM 구문
+    - SELECT DISTINCT ~ FROM 구문
+- 조회된 데이터(행의 모든 컬럼)가 중복되었을 때 중복을 제거하고 한 개만 보여준다
+- 모든 컬럼의 값이 같아야 행을 하나로 줄여서 조회한다
 
+### 데이터 연결 연산자, ||
+- 두 개의 데이터를 하나의 데이터(문자열)로 연결하여 표현하는 연산자
+- 문자열 || 문자열
+- 문자열 || 숫자
+- 문자열 || 날짜
 
+### 오라클 내장 함수(Built-In Functions)
+- 오라클 SQL Functions
+- [레퍼런스 URL](https://docs.oracle.com/cd/E11882_01/server.112/e41084/functions.htm#SQLRF006)
+- **단일 행 함수, Single Row Functions**
+    - 테이블을 조회할 때 조회되는 모든 행에 각각 함수의 결과가 반영된다
+- **그룹 함수, Group Functions**
+    - 행들의 조회결과를 하나의 결과로 도출하는 함수
+
+### DUAL 테이블
+- SYS계정(관리자계정)이 소유하는 테이블
+- 오라클에서 제공하는 테스트 용 테이블
+- 조회 결과를 하나의 행으로 출력해주는 기능
+- 연산의 결과, 가상 컬럼, 함수의 결과 등을 확인할 때 사용한다 -> SQL Functions를 테스트하기 위해 사용한다
+
+### 단일 행 함수의 종류
+#### 숫자 함수, Numeric Function
+- 숫자를 매개변수로 받아서 숫자를 변환
+- Java의 Math클래스와 비슷한 역할을 한다
+#### 문자 함수, Character Function
+- 문자를 매개변수로 받아서 사용하는 함수
+    1. 반환값이 문자인 함수
+    2. 반환값이 숫자인 함수
+#### 날짜 함수, Datetime Function
+- 날짜/시간 데이터타입을 매개변수로 사용하는 함수
+	> **sysdate, systimestamp**   
+	현재 날짜/시간을 반환하는 함수   
+
+	매개변수 없이 사용한다   
+	()괄호도 사용하지 않는다   
+
+	sysdate는 DATE타입이다   
+	systimestamp는 TIMESTAMP타입이다
+#### 변환 함수, Conversion Function
+- 숫자, 문자, 날짜 사이의 형변환을 해주는 함수
+- TO_CHAR : NUMBER 또는 DATE -> 원하는 서식의 VARCHAR2
+- TO_NUMBER : NUMBER포맷의 VARCHAR2 -> NUMBER
+- TO_DATE : DATE포맷의 VARCHAR2 -> DATE
+```sql
+		    TO_CHAR(number)		        TO_DATE
+	숫자	 ----------->	문자		---------->	날짜
+	(NUMBER) <-----------	(VARCHAR2)	<----------	(DATE)
+		    TO_NUMBER			        TO_CHAR(date)
+```
+#### to_char(number)
+- NUMBER -> VARCHAR2 변환
+- 숫자 -> 문자
+- TO_CHAR(number)
+- TO_CHAR(number, 숫자서식문자)
+    - **숫자 서식 문자**
+        - 0 : 숫자가 들어갈 자리를 확보한다, 남은 자리를 0으로 LPAD한다
+        - 9 : 숫자가 들어갈 자리를 확보한다, 남은 자리를 ' '(빈칸)으로 LPAD한다
+        - , : 자릿수 구분 문자 추가
+        - . : 소수점 구분 문자
+        - $ : 통화기호 $ 추가
+        - L : 세계 통화기호 추가 (설정된 통화를 따라감, 한국 : ￦)
+#### to_char(datetime)
+- DATETIME -> VARCHAR2
+- 날짜시간 -> 문자
+- to_char(datetime)
+- to_char(datetime, 날짜서식문자)
+    - **날짜형식 지정하는 문자**
+        - SCC : 세기
+        - YEAR, year, Year : 년도
+        - YYYY, YY, YYY, Y : 숫자 년도, Y의 개수는 년도를 표현하는 자릿수를 나타냄
+        - MM : 숫자 월
+        - MONTH, MON : 문자 월
+        - Q : 분기
+        - DD : 월 기준 날짜
+        - D : 주 기준 날짜(일요일부터 1, 토요일까지 7)
+        - DDD : 년 기준 날짜
+        - DAY : 요일
+        - DY : 요일의 약자
+        - HH : 12시간 표기법 시간
+        - HH12 : 12시간 표기법 시간
+        - HH24 : 24시간 표기법 시간
+        - MI : 분
+        - SS : 초
+        - AM, PM, A.M., P.M. : 오전/오후
+        - FF : 밀리초
+            - SYSTIMESTAMP같은 밀리초를 가진 TIMESTAMP타입에서 사용 가능하다
+    - **접미어 서식**
+        - TH : 서수 (숫자+영문)	(ex. 31st)
+        - SP : 기수 (영문)		(ex. THIRTY-ONE)
+        - THSP, SPTH : 서수 (영문)	(ex. THIRTY-FIRST)
+        - 접미어 앞에 오는 서식의 UPEER, LOWER, INITCAP이 적용된다
+        > ex)   Ddsp -> Four   
+                DDth -> 04TH   
+                mmsp -> nine
+#### 기타 단일행 함수
+- **NVL**
+> 특정값이 NULL이 판단하여 원하는 값으로 변환하는 함수   
+활용) NVL(비교데이터, 원하는 값)
+- **NVL2**
+> 특정값이 NULL이 판단하여 원하는 값으로 변환하는 함수   
+NULL일 경우, NULL이 아닐 경우에 맞춰 원하는 값으로 변환할 수 있다   
+활용) NVL2(비교데이터, NULL이 아닐 경우 반환값, NULL일 경우 반환값)
+- **NULLIF**
+> 두 개의 같은 같은지 비교하고 같으면 NULL 반환   
+다르면 첫번째 매개변수를 반환   
+활용) NULLIF(첫번째값, 두번째값)
+- **DECODE**
+> 비교값을 여러 개 나열하고 비교 결과를 반환하는 함수
