@@ -64,8 +64,7 @@
 - 트랜잭션 관련 명령어 - **COMMIT, ROLLBACK**
 - TCL, Transaction Control Language
 
-### :bulb: 오라클 11gR2 SQL 레퍼런스
-[URL](https://docs.oracle.com/cd/E11882_01/server.112/e41084/toc.htm)
+### :bulb: 오라클 11gR2 SQL 레퍼런스 : [URL](https://docs.oracle.com/cd/E11882_01/server.112/e41084/toc.htm)
 
 ### :bulb: SELECT 구문 - DML, DQL(Data Query Language)
 - 테이블에 저장된 데이터를 조회할 때 사용하는 명령어
