@@ -252,10 +252,10 @@ WHERE 컬럼명 연산자 조건값
 - TO_NUMBER : NUMBER포맷의 VARCHAR2 -> NUMBER
 - TO_DATE : DATE포맷의 VARCHAR2 -> DATE
 ```sql
-		    TO_CHAR(number)		    TO_DATE
+		TO_CHAR(number)		    TO_DATE
 	숫자	 ----------->	문자		---------->	날짜
 	(NUMBER) <-----------	(VARCHAR2)	<----------	(DATE)
-		    TO_NUMBER			    TO_CHAR(date)
+		TO_NUMBER			    TO_CHAR(date)
 ```
 #### TO_CHAR(number)
 - NUMBER -> VARCHAR2 변환
