@@ -76,12 +76,12 @@
 ### :bulb: 리스너 설정 파일 위치
 - 작업 전에 .ora 파일들 백업 필수!
 - C:\oraclexe\app\oracle\product\11.2.0\server\network\ADMIN
-  > listener.ora
-	하단의 HOST 항목 확인
-	컴퓨터 호스트네임과 일치해야함 (변경)
-  > tnsnames.ora
-	상단의 HOST 항목 확인
-	컴퓨터 호스트네임과 일치해야함 (변경)
+  > listener.ora   
+	하단의 HOST 항목 확인   
+	컴퓨터 호스트네임과 일치해야함 (변경)    
+  > tnsnames.ora   
+	상단의 HOST 항목 확인   
+	컴퓨터 호스트네임과 일치해야함 (변경)   
 - 호스트네임 확인은 cmd창(콘솔)에서 hostname 입력 ex) DESKTOP-7H5UIAM
 - 호스트 항목 변경 후에는 오라클 서비스 종료, 재시작 필요
 
@@ -93,11 +93,11 @@
 - 오라클 데이터베이스 서버에 접속하여 DB에 대한 작업을 수행하는 도구 (프로그램)
 1. SQL*Plus
 	- Oracle 데이터베이스에느 제공하는 기본 Tool
-	- 별도의 설치가 필요없다
+	- 별도의 **설치가 필요없다**
 	- CLI 환경 (Commnad Line Interface)
 	- 콘솔창에서 sqlplus라고 입력하여 실행할 수 있다
 	- 시작 메뉴에서 'Run SQL Command Line'을 실행한다
 2. SQL*Developer
 	- Oracle에서 제공하는 추가적인 클라이언트 Tool
-	- 별도의 설치가 필요하다
+	- 별도의 **설치가 필요하다**
 	- GUI 환경 (Graphical User Interface)
