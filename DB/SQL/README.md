@@ -35,7 +35,7 @@
 - 주로 CRUD작업을 수행하는 명령어들이다 (Create, Read, Update, Delete)
 - 스크립트 언어이다
 	- 코드를 읽어서 곧바로 실행된다
-	- 인터프리트 언어
+	- [인터프리트](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/Java/Java%EA%B0%9C%EB%85%90/%EA%B8%B0%EB%B3%B8%EA%B0%9C%EB%85%90.md#bulb-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-interpreter-interpret) 언어
 
 ### :bulb: SQL의 용도에 따른 분류
 #### 1. DML, Data Manipulation Langauge
