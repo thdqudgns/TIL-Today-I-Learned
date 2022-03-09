@@ -68,7 +68,7 @@
 
 ### :bulb: SELECT 구문 - DML, DQL(Data Query Language)
 - 테이블에 저장된 데이터를 조회할 때 사용하는 명령어
-- 반드시 FROM절이 뒤에 따라 와야한다
+- **반드시 FROM절이 뒤에 따라 와야한다**
     - **구문 형식**
         ```sql
             SELECT * FROM tablename;
@@ -84,22 +84,22 @@
         - 인라인뷰, Inline View (서브쿼리)
     - **SELECT 구문에서의 Alias, 별칭**
         - 조회하려는 컬럼명, 테이블명 등의 이름에 별칭을 붙일 수 있다
-        - 컬럼에 AS 키워드를 붙이고 별명을 붙이거나, 그냥 별칭을 바로 옆에 사용한다
+        - **컬럼**에 AS 키워드를 붙이고 별명을 붙이거나, 그냥 별칭을 바로 옆에 사용한다
         ```sql
             ex)	empno AS "사원번호"
             ex)	empno "사번"
         ```
-        - 테이블명 옆에 별칭을 붙여 사용한다
+        - **테이블명** 옆에 별칭을 붙여 사용한다
         ```sql
             ex)	FROM emp "사원정보"
         ```
-        - ""큰따옴표로 묶어서 되고 ""큰따옴표없이 사용해도되지만 숫자나 기호가 포함되면 ""로 묶어야 한다
+        - ""큰따옴표로 묶어서 되고 ""큰따옴표없이 사용해도되지만 **숫자나 기호가 포함되면 ""로 묶어야 한다**
         - 한글, 영어, 숫자 전부 사용 가능하다
         - 컬럼명과 테이블명을 단순화하거나 명확하게할 때 사용한다
 
 ### :bulb: WHERE 절
 - 조건절, 조건에 만족하는 데이터만(행) 조회되거나 처리되도록 설정한다
-- SELECT, UPDATE, DELETE 구문에서 사용된다
+- **SELECT, UPDATE, DELETE** 구문에서 사용된다
 - 형식
 ```sql
 WHERE [조건절]
@@ -179,8 +179,8 @@ WHERE 컬럼명 연산자 조건값
     - 테이블의 데이터를 빠르게 찾을 수 있도록 도와준다
 
 ### :bulb: ORDER BY 절
-- SELECT쿼리 결과를 정렬하기 위한 구문
-- WHERE절 다음에 온다
+- SELECT쿼리 결과를 **정렬**하기 위한 구문
+- **WHERE절 다음에 온다**
 - 기본적으로 오름차순 정렬을 한다
 - ASC 기능 : 오름차순, ASCENDING의 약자, 생략가능
 - DESC 기능 : 내림차순, DESCENDING의 약자
@@ -205,7 +205,7 @@ WHERE 컬럼명 연산자 조건값
 - SELECT 키워드와 짝꿍으로 사용된다
     - SELECT ~ FROM 구문
     - SELECT DISTINCT ~ FROM 구문
-- 조회된 데이터(행의 모든 컬럼)가 중복되었을 때 중복을 제거하고 한 개만 보여준다
+- **조회된 데이터(행의 모든 컬럼)가 중복되었을 때 중복을 제거하고 한 개만 보여준다**
 - 모든 컬럼의 값이 같아야 행을 하나로 줄여서 조회한다
 
 ### :bulb: 데이터 연결 연산자, ||
@@ -217,14 +217,14 @@ WHERE 컬럼명 연산자 조건값
 ### :bulb: 오라클 내장 함수(Built-In Functions)
 - 오라클 SQL Functions
 - [레퍼런스 URL](https://docs.oracle.com/cd/E11882_01/server.112/e41084/functions.htm#SQLRF006)
-- **단일 행 함수, Single Row Functions**
+- **[단일 행 함수](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL#bulb-%EB%8B%A8%EC%9D%BC-%ED%96%89-%ED%95%A8%EC%88%98%EC%9D%98-%EC%A2%85%EB%A5%98), Single Row Functions**
     - 테이블을 조회할 때 조회되는 모든 행에 각각 함수의 결과가 반영된다
-- **그룹 함수, Group Functions**
-    - 행들의 조회결과를 하나의 결과로 도출하는 함수
+- **[그룹 함수](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL#bulb-%EB%8B%A8%EC%9D%BC-%ED%96%89-%ED%95%A8%EC%88%98%EC%9D%98-%EC%A2%85%EB%A5%98), Group Functions**
+    - 행들의 조회 결과를 하나의 결과로 도출하는 함수
 
 ### :bulb: DUAL 테이블
 - SYS계정(관리자계정)이 소유하는 테이블
-- 오라클에서 제공하는 테스트 용 테이블
+- 오라클에서 제공하는 **테스트 용 테이블**
 - 조회 결과를 하나의 행으로 출력해주는 기능
 - 연산의 결과, 가상 컬럼, 함수의 결과 등을 확인할 때 사용한다 -> SQL Functions를 테스트하기 위해 사용한다
 
@@ -252,12 +252,12 @@ WHERE 컬럼명 연산자 조건값
 - TO_NUMBER : NUMBER포맷의 VARCHAR2 -> NUMBER
 - TO_DATE : DATE포맷의 VARCHAR2 -> DATE
 ```sql
-		    TO_CHAR(number)		        TO_DATE
+		    TO_CHAR(number)		      TO_DATE
 	숫자	 ----------->	문자		---------->	날짜
 	(NUMBER) <-----------	(VARCHAR2)	<----------	(DATE)
-		    TO_NUMBER			        TO_CHAR(date)
+		    TO_NUMBER			      TO_CHAR(date)
 ```
-#### to_char(number)
+#### TO_CHAR(number)
 - NUMBER -> VARCHAR2 변환
 - 숫자 -> 문자
 - TO_CHAR(number)
@@ -269,11 +269,11 @@ WHERE 컬럼명 연산자 조건값
         - . : 소수점 구분 문자
         - $ : 통화기호 $ 추가
         - L : 세계 통화기호 추가 (설정된 통화를 따라감, 한국 : ￦)
-#### to_char(datetime)
+#### TO_CHAR(datetime)
 - DATETIME -> VARCHAR2
 - 날짜시간 -> 문자
-- to_char(datetime)
-- to_char(datetime, 날짜서식문자)
+- TO_CHAR(datetime)
+- TO_CHAR(datetime, 날짜서식문자)
     - **날짜형식 지정하는 문자**
         - SCC : 세기
         - YEAR, year, Year : 년도
@@ -304,12 +304,12 @@ WHERE 컬럼명 연산자 조건값
                 mmsp -> nine
 #### 기타 단일행 함수
 - **NVL**
-    - 특정값이 NULL이 판단하여 원하는 값으로 변환하는 함수   
+    - 특정값이 NULL이면 원하는 값으로 변환하는 함수   
     ```sql
     NVL(비교데이터, 원하는 값)
     ```
 - **NVL2**
-    - 특정값이 NULL이 판단하여 원하는 값으로 변환하는 함수   
+    - 특정값이 NULL인지 판단하여 원하는 값으로 변환하는 함수   
     - NULL일 경우, NULL이 아닐 경우에 맞춰 원하는 값으로 변환할 수 있다   
     ```sql
     NVL2(비교데이터, NULL이 아닐 경우 반환값, NULL일 경우 반환값)
@@ -337,7 +337,7 @@ WHERE 컬럼명 연산자 조건값
     ```
 #### CASE 구문
 - DECODE함수와 비슷한 동작을 하는 조건 구문
-- CASE () WHEN THEN () END 로 구성된다
+- CASE (-) WHEN THEN (-) END 로 구성된다
 - WHEN THEN의 마지막에 ELSE 구문을 추가할 수 있다
 ```sql
 	CASE 기준값
@@ -360,11 +360,11 @@ WHERE 컬럼명 연산자 조건값
 ```
 
 ### :bulb: 그룹 함수, Group Function
-- 테이블의 특정 행들을 그룹화하여 하나의 결과로 반환한다
-- 주로 테이블의 통계 처리를 수행한다
+- 테이블의 특정 행들을 그룹화하여 **하나의 결과로 반환한다**
+- 주로 테이블의 **통계 처리**를 수행한다
 - 계산된 결과를 하나의 값으로 반환하게 된다
 - 그룹마다 하나씩 여러 개의 값으로 반환하기도 한다
-- COUNT : 데이터를 가지고있는 행 수를 반환, 데이터의 개수
+- COUNT : 데이터를 가지고있는 **행 수**를 반환, 데이터의 개수
     - NULL값을 무시한다
 	- NULL데이터를 가진 컬럼을 조회하면 전체 행 수에 포함되지 않는다
 	- count(*) vs count(1) 성능 이슈가 있지만 아무거나 써도된다
@@ -373,16 +373,17 @@ WHERE 컬럼명 연산자 조건값
 - MAX : 행들 중에서 가장 큰 값
 - MIN : 행들 중에서 가장 작은 값
 #### GROUP BY 절
-- 데이터(행)들을 원하는 기준(컬럼의 조합)으로 그룹화할 때 사용하는 절
+- 데이터(행)들을 원하는 기준(컬럼의 조합)으로 **그룹화**할 때 사용하는 절
 - 그룹함수 사용할 때 적용한다
-- GROUP BY 절에 컬럼을 명시하고 해당 컬럼의 값이 같은 행들을 같은 그룹으로 만들어준다
+- GROUP BY 절에 **컬럼을 명시**하고 **해당 컬럼의 값이 같은 행들을 같은 그룹으로 만들어준다**
     - SELECT절에서 그룹함수 이외에 다른 컬럼을 같이 조회하려면 GROUP BY절에 그룹함수를 제외한 모든 컬럼을 다 적어주어야 한다
 ```sql
 GROUP BY colname1, colname2, colname3, ...
 ```
 #### HAVING 절
-- GROUP By 절 다음에 오는 조건절
-- 그룹함수를 이용한 조건을 설정하고 싶을 때 사용한다 -> WHERE절에서는 그룹함수를 사용할 수 없다
+- GROUP BY 절 다음에 오는 조건절
+- **그룹함수를 이용한 조건을 설정**하고 싶을 때 사용한다 -> WHERE절에서는 그룹함수를 사용할 수 없다
+- WHERE 대신 사용한다고 보면 된다.
 
 ### :bulb: SELECT 구문의 실행(수행) 순서
 1. FROM절	- 조회하려는 대상 테이블을 설정한다
@@ -392,14 +393,14 @@ GROUP BY colname1, colname2, colname3, ...
 5. SELECT절	- 조회할 컬럼을 지정한다 (DISTINCT 중복 제거 가능)
 6. ORDER BY절	- 정렬
 - **작성하는 순서**
-	SELECT
-	FROM
-	WHERE
-	GROUP BY
-	HAVING
+	SELECT   
+	FROM   
+	WHERE   
+	GROUP BY   
+	HAVING   
 	ORDER BY
 - 수행 순서에 따라 Alias(별칭)도 적용된다
-	- SELECT절에서 지정한 Alias를 ORDER BY에서 사용할 수 있다
-	- SELECT절에서 지정한 Alias를 WHERE절에서 사용할 수 없다
+	- SELECT절에서 지정한 Alias를 ORDER BY에서 사용할 수 **있다**
+	- SELECT절에서 지정한 Alias를 WHERE절에서 사용할 수 **없다**
 
 ### :bulb: 조인, JOIN (08/02)
