@@ -8,4 +8,5 @@
 ### :bulb: [DDL](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/DDL)
 ### :bulb: [자료형](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/DataType)
 ### :bulb: [제약사항](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/%EC%A0%9C%EC%95%BD%EC%82%AC%ED%95%AD)
+### :bulb: [Object](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/Object)
 ### :bulb: [DCL](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/DCL)
