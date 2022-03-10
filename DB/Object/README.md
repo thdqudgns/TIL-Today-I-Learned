@@ -1,7 +1,7 @@
 # :pushpin: Object
 
 ### :bulb: 데이터베이스 객체(Object)
-- [테이블]()
+- [테이블](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL#bulb-%ED%85%8C%EC%9D%B4%EB%B8%94-table-tb)
 - 사용자
 - 인덱스
 - 뷰
