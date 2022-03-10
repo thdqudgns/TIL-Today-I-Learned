@@ -101,3 +101,24 @@
 	- Oracle에서 제공하는 추가적인 클라이언트 Tool
 	- 별도의 **설치가 필요하다**
 	- GUI 환경 (Graphical User Interface)
+
+### AQUERY TOOL 사이트
+- 데이터베이스 모델링(설계) 웹 툴
+- [이동](https://aquerytool.com/)
+
+### 코멘트, Comment
+- 테이블이나 컬럼에 설명을 적어주는 객체
+- 작성된 주석(코멘트)는 자료사전을 이용하여 확인한다
+#### 테이블 코멘트
+	```sql
+	COMMENT ON TABLE tablename IS '코멘트';
+	```
+#### 컬럼 코멘트
+	```sql
+	COMMENT ON COLUMN tablename.columnname IS '코멘트';
+	```
+#### 자료사전
+- USER_TAB_COMMENTS -테이블코멘트
+- USER_COL_COMMENTS -컬럼코멘트
+#### 코멘트 삭제
+- 삭제 코드는 별도로 존재하지 않으며, 코멘트 내용을 ''로 다시 작성하면 된다
