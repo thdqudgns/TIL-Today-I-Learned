@@ -43,8 +43,8 @@
 이렇게 다양한 자료구조 중 상황에 따라 적절한 구조를 선택하는 기준은 다음과 같다.   
 **데이터의 양, 데이터의 사용 빈도, 컴퓨터 기억장치의 양, 데이터에 대한 접근 시간, 데이터의 형태가 유지되는지 변경되는지**
 
-- [자료구조 분류별 설명]()
-- [정렬]()
+- [자료구조 분류별 설명](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0.md)
+- [정렬](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%A0%95%EB%A0%AC.md)
 
 ### :pushpin: 알고리즘
 - 알고리즘이란 계산이나 작업을 하기 위한 **순서**를 의미한다.
