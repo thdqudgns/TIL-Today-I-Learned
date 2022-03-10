@@ -2,26 +2,24 @@
 
 ### :bulb: 오라클 DB 설치하기
 - 오라클 Database 11g R2 Express Edition 사용
-- www.oracle.com 접속
-- Products 메뉴 - Software항목에서 Oracle Database 클릭
-- Download Oracle Database 19c 버튼 클릭
-- 화면 제일 하단에서Oracle Database 11g Release 2 Express Edition for Windows 64 클릭
-- Oracle Database 11gR2 Express Edition for Windows x64 클릭
+- [직접 URL](https://www.oracle.com/database/technologies/xe-prior-release-downloads.html)
+- Oracle Database 11gR2 Express Edition for Windows x64의 Download 클릭   
+![설치 이미지](https://imgur.com/Fk3nq2h)
 - 로그인 필요 (회원가입하세요!)
 - 로그인하면 다운로드 시작
 - 다운로드완료하면 설치
 - 중요!! 설치하면서 비밀번호 1234 로 입력할 것!!
-- [직접 URL](https://www.oracle.com/database/technologies/xe-prior-releases.html)
 
 ### :bulb: 오라클 SQL Developer 설치하기
 - www.oracle.com 접속
-- Resources 메뉴 - Software Downloads 클릭
-- Deloper Tools 항목 확인
-- SQL Developer 링크 찾아서 클릭
-- Windows 64-bit with JDK 8 included 항목 다운로드
-- 압춥 해제
+- Resources 메뉴 - Downloads 클릭 - SQL Developer 링크 찾아서 클릭   
+![찾기](https://imgur.com/3NCRcmU)
+- [직접 URL](https://www.oracle.com/tools/downloads/sqldev-downloads.html)   
+![설치 이미지](https://imgur.com/vEbEzvH)
+- Windows 64-bit with JDK 8 included 항목 다운로드   
+![다운로드](https://imgur.com/DxyPy5k)
+- 압축 해제
 - sqldeveloper.exe 실행
-- [직접 URL](https://www.oracle.com/tools/downloads/sqldev-downloads.html)
 
 ### :bulb: 파일 위치
 - C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin
@@ -36,7 +34,8 @@
 - ALTER USER scott IDENTIFIED BY tiger; 입력
 - conn scott/tiger;
 - show user; -> USER is "SCOTT" 으로 나오면 성공
-- SELECT * FROM dept; -> 테스트용 부서 정보가 조회됨
+- SELECT * FROM dept; -> 테스트용 부서 정보가 조회됨   
+![콘솔창](https://imgur.com/OnrSQiA)
 
 ### :bulb: SQL Developer에서 데이터베이스 접속
 - 파일 메뉴 - 새로만들기
@@ -63,6 +62,7 @@
 ```sql
 	ex) ALTER USER scott ACCOUNT UNLOCK;
 ```
+![락 해제](https://imgur.com/MJVyK16)
 
 ### :bulb: 컴퓨터 부팅할 때 서비스 자동으로 켜지지않게 만들기
 - win키 + r (실행) 열기
@@ -102,11 +102,11 @@
 	- 별도의 **설치가 필요하다**
 	- GUI 환경 (Graphical User Interface)
 
-### AQUERY TOOL 사이트
+### :bulb: AQUERY TOOL 사이트
 - 데이터베이스 모델링(설계) 웹 툴
 - [이동](https://aquerytool.com/)
 
-### 코멘트, Comment
+### :bulb: 코멘트, Comment
 - 테이블이나 컬럼에 설명을 적어주는 객체
 - 작성된 주석(코멘트)는 자료사전을 이용하여 확인한다
 #### 테이블 코멘트
