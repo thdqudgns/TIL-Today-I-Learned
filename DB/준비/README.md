@@ -1,6 +1,6 @@
 # :pushpin: DB 준비
 
-### :bulb: 오라클 DB 설치하기
+### :bulb: 오라클 DB 설치하기 (윈도우)
 - 오라클 Database 11g R2 Express Edition 사용
 - [직접 URL](https://www.oracle.com/database/technologies/xe-prior-release-downloads.html)
 - Oracle Database 11gR2 Express Edition for Windows x64의 Download 클릭   
@@ -15,13 +15,13 @@
 - Resources 메뉴 - Downloads 클릭 - SQL Developer 링크 찾아서 클릭   
 ![찾기](https://imgur.com/3NCRcmU.png)
 - [직접 URL](https://www.oracle.com/tools/downloads/sqldev-downloads.html)   
-![설치 이미지](https://imgur.com/vEbEzvH.png)
 - Windows 64-bit with JDK 8 included 항목 다운로드   
+![설치 이미지](https://imgur.com/vEbEzvH.png)
 ![다운로드](https://imgur.com/DxyPy5k.png)
 - 압축 해제
 - sqldeveloper.exe 실행
 
-### :bulb: 파일 위치
+### :bulb: scott.sql 파일 위치
 - C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin
 - (맥 OS - @$ORACLE_HOME/rdbms/admin/)
 
@@ -31,7 +31,7 @@
 - conn system/1234;
 - @ 만 타이핑 해둔 상태로 다음 진행
 - 찾아둔 scott.sql 파일을 드래그&드랍, 엔터 -> 파일의 경로가 자동으로 입력 된다
-- ALTER USER scott IDENTIFIED BY tiger; 입력
+- ALTER USER scott IDENTIFIED BY tiger; 입력 (본인은 예전에 변경해놔서 생략.)
 - conn scott/tiger;
 - show user; -> USER is "SCOTT" 으로 나오면 성공
 - SELECT * FROM dept; -> 테스트용 부서 정보가 조회됨   
