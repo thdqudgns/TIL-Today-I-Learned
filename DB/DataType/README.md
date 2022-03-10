@@ -1,6 +1,6 @@
 # :pushpin: DataType
 
-### NUMBER
+### :bulb: NUMBER
 - 숫자 타입
 - 정수, 실수 둘 다 표현 가능하다
 - 음수, 양수, 0 표현 가능
@@ -20,7 +20,7 @@
 	- 소수부분 뒤에서부터 p자리를 숫자로 표현 가능
     > ex)	NUMBER(3, 5) -> 0.00xxx
 
-### VARCHAR2(n)
+### :bulb: VARCHAR2(n)
 - VARiable CHARacter 2
 - 바캐릭터2
 - 최대 n길이까지 문자를 표현할 수 있는 데이터 타입
@@ -42,7 +42,7 @@
 	> ex)	VHARCHAR2(20 CHAR)   
 		-> 영어, 한글, 숫자에 상관없이 20글자까지 표현 가능
 
-### CHAR(n)
+### :bulb: CHAR(n)
 - 고정 길이 문자 데이터
 - n으로 지정한 크기만큼 저장 공간을 확보한다
 - 최소 크기는 1
@@ -54,14 +54,14 @@
 > 저장 공간을 처리하는 방식만 달라서 크기 표현을 신경써야한다   
 - CHAR타입은 데이터가 자료형 크기보다 작으면 남은 공간을 ' '빈칸으로 채운다
 
-### DATE
+### :bulb: DATE
 - 날짜시간타입(datetime)
 - 날짜와 시간을 저장할 수 있는 타입
 - 초단위까지 표현할 수 있다
 - 날짜관련 서식을 이용하여 년원일, 시분초, 오전/오후, 요일 등등을 표현할 수 있다
 - BC 4712/01/01 ~ 4712/12/31 의 표현 범위를 가지고 있다
 
-### TIMESTAMP
+### :bulb: TIMESTAMP
 - 날짜시간타입(datetime)
 - DATE타입의 확장형
 - 밀리초까지 표현 가능하다
@@ -69,13 +69,13 @@
 > sysdate : DATE타입으로 현재 날짜/시간을 표현한다   
 systimestamp : TIMESTAMP타입으로 현해 날짜/시간을 표현한다
 
-### LONG
+### :bulb: LONG
 - 가변 길이 문자
 - 최대 길이가 2GB
 - 테이블 당 한 개의 컬럼에만 지정할 수 있다
 - 테이블 내에 데이터가 직접 저장된다
 
-### LOB, Large OBject
+### :bulb: LOB, Large OBject
 - 가변 길이 타입
 - 최대 4GB까지 저장 가능
 - 테이블에 여러 컬럼으로 지정할 수 있다
@@ -89,7 +89,7 @@ systimestamp : TIMESTAMP타입으로 현해 날짜/시간을 표현한다
     - DBMS_LOB.SUBSTR( col, len, offset ) 함수를 이용하여 조회한다 -> col의 데이터를 offset부터 len만큼 조회한다
     - DBMS_LOB.SUBSTR(col, length(col), 1) -> 처음부터 전체 데이터를 조회한다
 
-### RAW, LONG RAW
+### :bulb: RAW, LONG RAW
 - 이미지나 사운드 같은 바이너리 파일을 저장할 때 사용한다
 - 이진 데이터가 저장되고 16진수로 출력된다
 - 문자로 변환할 수 없다
