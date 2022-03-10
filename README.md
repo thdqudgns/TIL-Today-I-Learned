@@ -6,8 +6,10 @@
 - [DB](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB)   
 교육 내용 정리했습니다.
 - [자료구조_알고리즘](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)   
-<알고리즘 도감>, <누구나 자료구조와 알고리즘> 책을 보며 정리했습니다. 알고리즘 문제 풀이도 올릴 예정입니다.
+<알고리즘 도감>, <누구나 자료구조와 알고리즘> 책을 보며 정리했습니다.   
+알고리즘 문제 풀이도 올릴 예정입니다.
 - [Books](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/books)   
-개발 공부하며 본 책들 정리했습니다. 개발의 길에 들어설 때 읽은 책들과, 공부하며 읽은 책들, 앞으로 볼 책들 목록이 있습니다.
+개발 공부하며 본 책들 정리했습니다.   
+개발의 길에 들어설 때 읽은 책들과, 공부하며 읽은 책들, 앞으로 볼 책들 목록이 있습니다.
 - [개념 부스러기](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/%EA%B0%9C%EB%85%90%20%EB%B6%80%EC%8A%A4%EB%9F%AC%EA%B8%B0)   
 여러 Youtube강의, 인터넷 강의를 보며 정리한 내용입니다. 여러 IT관련 용어와 개념을 정리했습니다.
