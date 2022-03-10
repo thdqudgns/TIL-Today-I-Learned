@@ -1,6 +1,6 @@
 # :pushpin: DML
 
-### INSERT
+### :bulb: INSERT
 - 테이블에 새로운 데이터(행)을 추가할 때 사용하는 SQL
 - 구문 형식
     ```sql
@@ -24,7 +24,7 @@
 	SELECT 절
     ```
 
-### INSERT ALL
+### :bulb: INSERT ALL
 - **한 번에 여러 행을 삽입**할 수 있게 해주는 DML 쿼리
 - SELECT구문의 결과를 조건에 따라서 INSERT되도록 해주는 구문
 - 여러 개의 INSERT구문으로 작성해야할 쿼리를 하나로 합칠 수 있다
@@ -42,7 +42,7 @@
 	** VALUES절 생략 가능 -> SELECT절에서 조회된 모든 행(데이터)을 삽입한다
     ```
 
-### DELETE
+### :bulb: DELETE
 - 테이블의 데이터(행)을 삭제할 때 사용하는 구문
 - 구문 형식
     ```sql
@@ -53,7 +53,7 @@
 	** WHERE절 없이 사용하면 테이블 전체 삭제
     ```
 
-### UPDATE
+### :bulb: UPDATE
 - 테이블의 데이터(행)을 수정하는 구문
 - 특정 행의 컬럼값을 변경할 수 있다
 - 구문 형식
@@ -65,7 +65,7 @@
 	** WHERE절 없이 사용하면 모든 행의 데이터가 변경된다
     ```
 
-### MERGE
+### :bulb: MERGE
 - 오라클 전용 구문
 - SELECT 수행 결과에 따라 UPDATE 또는 DELETE 또는 INSERT를 수행한다
 - SELECT**조회 결과가 존재하지 않으면 INSERT** 수행
