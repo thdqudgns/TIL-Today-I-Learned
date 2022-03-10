@@ -109,7 +109,7 @@ WHERE 컬럼명 연산자 조건값
 ```
 
 ### :bulb: 연산자
-- **비교(관계) 연산자**
+#### 비교(관계) 연산자
 ```sql
 	=	같다
 	!=	같지 않다 ( <>  ^= )
@@ -120,12 +120,12 @@ WHERE 컬럼명 연산자 조건값
 	<=	작거나 같다
 	>=	크거나 같다
 ```
-- **논리 연산자**
-	- AND	두 조건이 모두 만족할 때 TRUE
-	- OR	두 조건 중 하나라도 만족할 때 TRUE
-	- NOT	논리 부정
-- **기타 연산자**
-	- **BETWEEN a AND b** : a 와 b 사이의 데이터라면 TRUE (a, b 포함)
+#### 논리 연산자
+- AND	두 조건이 모두 만족할 때 TRUE
+- OR	두 조건 중 하나라도 만족할 때 TRUE
+- NOT	논리 부정
+#### **기타 연산자**
+- **BETWEEN a AND b** : a 와 b 사이의 데이터라면 TRUE (a, b 포함)
     ```sql
 	ex)	WHERE deptno BETWEEN 10 AND 20
 	ex)	WHERE sal BETWEEN 1000 AND 2000
@@ -134,14 +134,14 @@ WHERE 컬럼명 연산자 조건값
     ---
 	부정문 : NOT BETWEEN a AND b
     ```
-	- **IN ( list )** : list에 해당하는 값 중 하나라도 일치하면 TRUE
+- **IN ( list )** : list에 해당하는 값 중 하나라도 일치하면 TRUE
     ```sql
 	ex)	deptno IN ( 10, 20 )
 		(deptno = 10 OR deptno = 20)
     ---
 	부정문 : NOT IN ( list )
     ```
-	- **LIKE** : 지정된 형식의 문자열 포맷(서식)으로 일치하는 조건
+- **LIKE** : 지정된 형식의 문자열 포맷(서식)으로 일치하는 조건
     ```sql
 	% : 여러 개의 문자, 또는 문자가 없는 경우
 	_ : 단일 문자, 반드시 한 글자가 존재하는 경우
@@ -154,7 +154,7 @@ WHERE 컬럼명 연산자 조건값
     ---
 	부정문 : NOT LIKE
     ```
-	- **IS NULL** : 컬럼의 값이 NULL인지 검사하는 연산자
+- **IS NULL** : 컬럼의 값이 NULL인지 검사하는 연산자
     ```sql
 	ex)	WHERE mgr IS NULL
 
