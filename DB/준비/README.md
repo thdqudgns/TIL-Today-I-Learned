@@ -4,7 +4,7 @@
 - 오라클 Database 11g R2 Express Edition 사용
 - [직접 URL](https://www.oracle.com/database/technologies/xe-prior-release-downloads.html)
 - Oracle Database 11gR2 Express Edition for Windows x64의 Download 클릭   
-![설치 이미지](https://imgur.com/Fk3nq2h)
+[설치이미지](https://i.imgur.com/Fk3nq2h.png)
 - 로그인 필요 (회원가입하세요!)
 - 로그인하면 다운로드 시작
 - 다운로드완료하면 설치
@@ -13,11 +13,11 @@
 ### :bulb: 오라클 SQL Developer 설치하기
 - www.oracle.com 접속
 - Resources 메뉴 - Downloads 클릭 - SQL Developer 링크 찾아서 클릭   
-![찾기](https://imgur.com/3NCRcmU)
+![찾기](https://imgur.com/3NCRcmU.png)
 - [직접 URL](https://www.oracle.com/tools/downloads/sqldev-downloads.html)   
-![설치 이미지](https://imgur.com/vEbEzvH)
+![설치 이미지](https://imgur.com/vEbEzvH.png)
 - Windows 64-bit with JDK 8 included 항목 다운로드   
-![다운로드](https://imgur.com/DxyPy5k)
+![다운로드](https://imgur.com/DxyPy5k.png)
 - 압축 해제
 - sqldeveloper.exe 실행
 
@@ -35,7 +35,7 @@
 - conn scott/tiger;
 - show user; -> USER is "SCOTT" 으로 나오면 성공
 - SELECT * FROM dept; -> 테스트용 부서 정보가 조회됨   
-![콘솔창](https://imgur.com/OnrSQiA)
+![콘솔창](https://imgur.com/OnrSQiA.png)
 
 ### :bulb: SQL Developer에서 데이터베이스 접속
 - 파일 메뉴 - 새로만들기
@@ -62,7 +62,7 @@
 ```sql
 	ex) ALTER USER scott ACCOUNT UNLOCK;
 ```
-![락 해제](https://imgur.com/MJVyK16)
+![락 해제](https://imgur.com/MJVyK16.png)
 
 ### :bulb: 컴퓨터 부팅할 때 서비스 자동으로 켜지지않게 만들기
 - win키 + r (실행) 열기
