@@ -4,7 +4,7 @@
 - 오라클 Database 11g R2 Express Edition 사용
 - [직접 URL](https://www.oracle.com/database/technologies/xe-prior-release-downloads.html)
 - Oracle Database 11gR2 Express Edition for Windows x64의 Download 클릭   
-[설치이미지](https://i.imgur.com/Fk3nq2h.png)
+![설치이미지](https://i.imgur.com/Fk3nq2h.png)
 - 로그인 필요 (회원가입하세요!)
 - 로그인하면 다운로드 시작
 - 다운로드완료하면 설치
