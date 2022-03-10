@@ -1,6 +1,6 @@
 # :pushpin: DCL
 
-### DCL, Data Control Language
+### :bulb: DCL, Data Control Language
 - 데이터 제어어
 - 데이터베이스에 대한 설정(제어)에 관한 구문이다
 - 권한 설정
