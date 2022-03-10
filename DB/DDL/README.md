@@ -33,7 +33,6 @@
 	  컬럼명2 자료형2,
 	  컬럼명3 자료형3,
 	  ...
-
 	);
 
 	-- SELECT조회결과로 테이블을 생성한다
@@ -80,27 +79,33 @@
 #### ALTER TABLE tablename RENAME COLUMN old_columnname TO new_columnname;
 - 컬럼의 이름을 변경한다
 #### ALTER TABLE - 테이블의 제약조건 다루기
-- ALTER TABLE tablename MODIFY 컬럼명 [데이터타입] 제약조건
-    - 컬럼의 정보를 변경하며 제약사항을 반영한다
-	- NOT NULL, DEFAULT 제약사항을 부여할 때 사용한다
-- ALTER TABLE tablename ADD CONSTRAINT cons_name 제약조건설정
-	- 테이블에 제약조건을 추가한다
-- ALTER TABLE tablename DROP CONSTRAINT cons_name
-	- 테이블에 제약조건을 제거한다
+```sql
+ALTER TABLE tablename MODIFY 컬럼명 [데이터타입] 제약조건
+```
+> 컬럼의 정보를 변경하며 제약사항을 반영한다   
+NOT NULL, DEFAULT 제약사항을 부여할 때 사용한다
+```sql
+ALTER TABLE tablename ADD CONSTRAINT cons_name 제약조건설정
+```
+> 테이블에 제약조건을 추가한다
+```sql
+ALTER TABLE tablename DROP CONSTRAINT cons_name
+```
+> 테이블에 제약조건을 제거한다
 
 ### :bulb: 테이블 삭제
-- **DELETE tablename;**
-    - DML
-	- 테이블의 데이터(내용물)만 삭제한다
-	- 지우고 난 후의 용량은 줄어들지 않는다
-    - 트랜잭션에 포함된다
-- **TRUNCATE TABLE tablename;**
-	- DDL
-	- 테이블의 데이터(내용물)만 삭제한다
-	- 테이블의 구조를 유지한다
-	- 지우고 난 후의 용량이 줄어든다
-	- 트랜잭션을 종료시킨다(Auto Commit)
-- **DROP TABLE tablename;**
-	- DDL
-	- 테이블의 스키마(구조)까지 포함하여 삭제한다
-	- 테이블 자체가 삭제된다
+#### DELETE tablename;
+- DML
+- 테이블의 데이터(내용물)만 삭제한다
+- 지우고 난 후의 용량은 줄어들지 않는다
+- 트랜잭션에 포함된다
+#### TRUNCATE TABLE tablename;
+- DDL
+- 테이블의 데이터(내용물)만 삭제한다
+- 테이블의 구조를 유지한다
+- 지우고 난 후의 용량이 줄어든다
+- 트랜잭션을 종료시킨다(Auto Commit)
+#### DROP TABLE tablename;
+- DDL
+- 테이블의 스키마(구조)까지 포함하여 삭제한다
+- 테이블 자체가 삭제된다

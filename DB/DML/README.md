@@ -9,14 +9,12 @@
 	INSERT INTO tablename ( col1, col2, col3, ... )
 	VALUES ( data1, data2, data3, ... )
 
-
 	2.
 	--컬럼을 따로 지정하지 않고 모든 컬럼에 삽입한다
 	-- -> VALUES절에서 모든 컬럼의 값을 다 입력한다
 	INSERT INTO tablename
 	VALUES ( data1, data2, data3, ... )
-
-
+	
 	3.
 	--VALUES절을 대신하여 SELECT구문을 이용하여 조회된 값을 삽입한다
 	-- -> SELECT쿼리의 Result Set을 테이블에 삽입한다
