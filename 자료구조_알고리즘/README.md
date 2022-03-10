@@ -1,5 +1,9 @@
 # :office: 자료구조 (Data Structure)
 
+- [자료구조 분류별 설명](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0.md)
+- [정렬](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%A0%95%EB%A0%AC.md)
+- [탐색](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%83%89.md)
+
 ### :pushpin: 자료구조는 왜 필요한가?
 사람들이 사물을 편리하고 효율적으로 사용하기 위해 정리하는 것과 마찬가지로 컴퓨터에서도 **자료를 효율적으로 사용하기 위해** 자료의 특성에 따라 **정리하고 조직화하는 여러 가지 구조**들이 있다. 이를 자료구조라고 한다.
 자료구조가 얼마나 잘 구조화되어 있느냐에 따라 프로그램의 속도, 개발 시간, 유지보수 비용이 달라지기에 중요하다.
@@ -43,8 +47,6 @@
 이렇게 다양한 자료구조 중 상황에 따라 적절한 구조를 선택하는 기준은 다음과 같다.   
 **데이터의 양, 데이터의 사용 빈도, 컴퓨터 기억장치의 양, 데이터에 대한 접근 시간, 데이터의 형태가 유지되는지 변경되는지**
 
-- [자료구조 분류별 설명](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0.md)
-- [정렬](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%A0%95%EB%A0%AC.md)
 
 ### :pushpin: 알고리즘
 - 알고리즘이란 계산이나 작업을 하기 위한 **순서**를 의미한다.
