@@ -2,10 +2,11 @@
 
 ### :bulb: 데이터베이스 객체(Object)
 - [테이블](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL#bulb-%ED%85%8C%EC%9D%B4%EB%B8%94-table-tb)
-- 사용자
-- 인덱스
-- 뷰
-- 시퀀스
+- [사용자](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/Object#bulb-%EC%82%AC%EC%9A%A9%EC%9E%90)
+- [권한](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/Object#bulb-%EA%B6%8C%ED%95%9C-privilege)
+- [인덱스](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/Object#bulb-%EC%9D%B8%EB%8D%B1%EC%8A%A4-index)
+- [뷰](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/Object#bulb-%EB%B7%B0-view)
+- [시퀀스](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/Object#bulb-%EC%8B%9C%ED%80%80%EC%8A%A4-sequence)
 
 ### :bulb: 사용자
 #### 관리자 계정
