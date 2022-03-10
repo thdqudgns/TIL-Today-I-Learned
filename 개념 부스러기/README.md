@@ -1,4 +1,4 @@
-# 개념 부스러기
+# :cookie: 개념 부스러기
 
 ### :pushpin: Garbage Collector (GC)
 - 메모리를 관리한다. 필요없는 데이터들을 쓸어담아서 버린다.

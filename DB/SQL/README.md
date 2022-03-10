@@ -402,5 +402,3 @@ GROUP BY colname1, colname2, colname3, ...
 - 수행 순서에 따라 Alias(별칭)도 적용된다
 	- SELECT절에서 지정한 Alias를 ORDER BY에서 사용할 수 **있다**
 	- SELECT절에서 지정한 Alias를 WHERE절에서 사용할 수 **없다**
-
-### :bulb: 조인, JOIN (08/02)
