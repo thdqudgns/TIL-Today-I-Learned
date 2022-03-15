@@ -9,6 +9,7 @@
 ### :book: 독서 중
 * [Java의 정석 - 남궁성](https://github.com/thdqudgns/standard)
 * [Effective Java - 조슈아 블로크](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/Java/Effective%20Java)
+* [JAVA 객체지향 디자인패턴]()
 * [알고리즘 도감 - 이시다 모리테루, 미야자키 쇼이치](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 * [누구나 자료구조와 알고리즘 - 제인 웬그로우]()
 * [오픈소스로 미래를 연마하라 - 비키 브라수어]()
