@@ -217,9 +217,9 @@ WHERE 컬럼명 연산자 조건값
 ### :bulb: 오라클 내장 함수(Built-In Functions)
 - 오라클 SQL Functions
 - [레퍼런스 URL](https://docs.oracle.com/cd/E11882_01/server.112/e41084/functions.htm#SQLRF006)
-- **[단일 행 함수](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL#bulb-%EB%8B%A8%EC%9D%BC-%ED%96%89-%ED%95%A8%EC%88%98%EC%9D%98-%EC%A2%85%EB%A5%98), Single Row Functions**
+- **[단일 행 함수](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL.md#bulb-%EB%8B%A8%EC%9D%BC-%ED%96%89-%ED%95%A8%EC%88%98%EC%9D%98-%EC%A2%85%EB%A5%98), Single Row Functions**
     - 테이블을 조회할 때 조회되는 모든 행에 각각 함수의 결과가 반영된다
-- **[그룹 함수](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL#bulb-%EA%B7%B8%EB%A3%B9-%ED%95%A8%EC%88%98-group-function), Group Functions**
+- **[그룹 함수](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL.md#bulb-%EA%B7%B8%EB%A3%B9-%ED%95%A8%EC%88%98-group-function), Group Functions**
     - 행들의 조회 결과를 하나의 결과로 도출하는 함수
 
 ### :bulb: DUAL 테이블
