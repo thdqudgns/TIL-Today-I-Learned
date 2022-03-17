@@ -79,7 +79,7 @@
 - 단일 행 서브쿼리 연산자( = != < > <= 등등 )는 사용할 수 없다
 - 스칼라 서브쿼리로 사용할 수 없다
 #### 다중 행 전용 연산자의 종류
-- **[IN](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL#%EA%B8%B0%ED%83%80-%EC%97%B0%EC%82%B0%EC%9E%90)**
+- **[IN](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SQL.md#%EA%B8%B0%ED%83%80-%EC%97%B0%EC%82%B0%EC%9E%90)**
     - 단일 행 연산자로 사용할 때와 사용법이 같다
 	- 다중 행 **결과 데이터를 전부 동등비교**(=)한다
 	- 각 데이터 비교는 OR로 연결된 것과 같다

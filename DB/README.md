@@ -6,7 +6,7 @@
 * :bulb: [SUBQUERY](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/SUBQUERY.md)
 * :bulb: [DML](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/DML.md)
 * :bulb: [DDL](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/DDL.md)
+* :bulb: [DCL](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/DCL.md)
 * :bulb: [자료형](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/DataType.md)
 * :bulb: [제약사항](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/Constraint.md)
 * :bulb: [Object](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/Object.md)
-* :bulb: [DCL](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB/DCL.md)
