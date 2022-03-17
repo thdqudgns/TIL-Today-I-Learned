@@ -2,11 +2,11 @@
 :memo: 초보 개발자의 공부 기록.
 
 - [Java](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/Java)   
-교육, <자바의 정석>, <이펙티브 자바>책을 보며 정리했습니다.
+교육, [Java의 정석](https://book.naver.com/bookdb/book_detail.naver?bid=10191151), [이펙티브 자바](https://book.naver.com/bookdb/book_detail.naver?bid=8064518)책을 보며 정리했습니다.
 - [DB](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB)   
 교육 내용 정리했습니다.
 - [자료구조_알고리즘](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)   
-[<알고리즘 도감>](https://book.naver.com/bookdb/book_detail.nhn?bid=13272714) 책을 보며 정리했습니다.   
+[알고리즘 도감](https://book.naver.com/bookdb/book_detail.nhn?bid=13272714) 책을 보며 정리했습니다.   
 알고리즘 문제 풀이도 올릴 예정입니다.
 - [Books](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/books)   
 개발 공부하며 본 책들 정리했습니다.   
