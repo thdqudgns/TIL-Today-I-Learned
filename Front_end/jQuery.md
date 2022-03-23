@@ -31,8 +31,6 @@
 	- 2.x의 업그레이드 버전
 	- jQuery Migrate 버전은 1.x 의 업그레이드 버전
 
-### jQuery API
-
 ### jQuery Core
 - jQuery문법이 적용되었음을 알리는 키워드
 - jQuery
@@ -145,6 +143,7 @@ $(객체).clone()
 ```
 - 객체를 복사하여 반환한다
 > ex) var $div = $("#myDiv").clone()   
+
 > 깊은 복사(Deep Copy)로 새로운 사본이 만들어진다   
 자식 노드들까지 함께 묶음으로 복사된다
 
