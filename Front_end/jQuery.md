@@ -50,13 +50,13 @@ $(document).ready(function() {
 - $("CSS셀렉터")
 - $(jsDOM객체)
 	- jsDOM객체를 jqDOM객체로 변환한다
-- ** "jsDOM객체"에는 순수JS DOM API를 적용할 수 있다
-- ** "jqDOM객체"에는 jQuery DOM API를 적용할 수 있다
+- "jsDOM객체"에는 순수JS DOM API를 적용할 수 있다
+- "jqDOM객체"에는 jQuery DOM API를 적용할 수 있다
 
 ### n번째 노드에 접근하기
 - $(객체).eq(idx) : idx번째 노드를 jQuery DOM객체로 반환
 - $(객체).get(idx) : idx번째 노드를 JS DOM객체로 반환
-- ** jQuery DOM객체에 [idx]를 적용하면 JS DOM객체로 반환
+- jQuery DOM객체에 [idx]를 적용하면 JS DOM객체로 반환
 	> ex)	$("p").get(2) == $("p")[2]
 
 ### 순차적으로 노드 접근하기 (반복문 API)
@@ -133,10 +133,11 @@ $(객체).nextAll("selector")
 ### 노드 생성하기
 ```js
 $("노드텍스트")
+
+ex) $("<div>")	-> <div>태그 객체를 생성한다   
+    $("<div>")	- div태그 생성   
+    $("div")	- div태그 선택
 ```
-> ex) $("<div>")	-> <div>태그 객체를 생성한다   
-$("<div>")	- div태그 생성   
-$("div")	- div태그 선택
 
 ### 노드 복사하기
 ```js
@@ -144,7 +145,7 @@ $(객체).clone()
 ```
 - 객체를 복사하여 반환한다
 > ex) var $div = $("#myDiv").clone()   
-깊은 복사(Deep Copy)로 새로운 사본이 만들어진다   
+> 깊은 복사(Deep Copy)로 새로운 사본이 만들어진다   
 자식 노드들까지 함께 묶음으로 복사된다
 
 ### 노드 추가/이동
