@@ -28,7 +28,7 @@
 
 ### 스프링 레거시 프로젝트에 적용된 스프링프레임워크 버전 바꾸기
 - 프로젝트 내에서 pom.xml 파일 열기
-- <properties>태그 확인
+- properties 태그 확인
 - <org.springframework-version> 항목의 값을 변경한 후 저장한다
 - 스프링프레임워크 documentation에서 찾아서 입력한다 (https://spring.io/projects/spring-framework#learn)
 - 지금 최신 GA버전은 5.3.12
@@ -71,7 +71,7 @@
 ### 메이븐 충돌(오류) 발생한 상황 처리하기
 - 서버를 시작하면 이클립스 콘솔의 예외 메시지가 뜬다
 - invalid LOC header 문구가 떠있는 예외가 발견된다
-    - pom.xml에 설정한 <dependency>의 라이브러리를 제대로 다운받지 못한 상황
+    - pom.xml에 설정한 dependency 의 라이브러리를 제대로 다운받지 못한 상황
 - 해결 방법
     1. 이클립스를 끈다
     2. C:\Users\user1\.m2\repository\ 폴더를 삭제한다 (맥OS: 터미널에서 "open ~/.m2" 입력)
@@ -190,6 +190,7 @@
 - %m - 로그메시지 출력
 - %n - 개행문자
     > ex)	%-5p: %c - %m%n
+    
     >       %-5p	-> 5자리로 왼쪽정렬하며 로그레벨을 출력한다
 
 ### 컨트롤러 메소드의 매개변수
@@ -198,11 +199,11 @@
 - 별도의 new연산자 사용없이 객체를 생성해준다
 	- 자주 사용되는 객체 또는 웹어플리케이션 동작에 필요한 객체를 스프링이 자동으로 생성해준다
 
-> HttpServletRequest : 요청 정보 객체
-> HttpServletResponse : 응답 정보 객체
+> HttpServletRequest : 요청 정보 객체   
+HttpServletResponse : 응답 정보 객체
 
-> Reader : 요청객체 입력스트림 (req.getReader())
-> Writer : 응답객체 출력스트림 (resp.getWriter())
+> Reader : 요청객체 입력스트림 (req.getReader())   
+Writer : 응답객체 출력스트림 (resp.getWriter())
 
 > HttpSession : 세션 정보 객체
 
@@ -420,7 +421,7 @@
 2. root-context.xml 편집
 - dataSource에 대한 설정
 - dataSource의 id를 dataSourceSpied로 변경
-- 새로운 dataSource를 id로 가지는 <bean> 작성
+- 새로운 dataSource를 id로 가지는 **bean** 작성
     ```java
 	<!-- DB접속 정보 -->
 	<bean id="dataSourceSpied" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -609,7 +610,7 @@
     ```
 
 ### aspectj-weaver 라이브러리 추가
-- pom.xml 파일에 <dependency>항목 추가
+- pom.xml 파일에 **dependency** 항목 추가
 - aspectjrt, Aspectj Runtime : aspect기능 활성화 라이브러리
 - aspectjweaver, Aspectj Weaver : aspect라이브러리의 정보를 이용하여 코드를 생성해주는 라이브러리
 ```java
