@@ -201,6 +201,7 @@ ex)	<h1><%=emp.getEname() %></h1>
 ```js
 <jsp:수행명령 속성="속성값"></jsp:수행명령>
 ```
+- ==================================================
 
 ```js
 <jsp:useBean id="bean속성명" class="클래스명" [scope="스코프지정"]>
@@ -211,13 +212,14 @@ ex)	<h1><%=emp.getEname() %></h1>
 - scope를 지정하지않으면 page영역에 저장된다
 - scope속성값
 	- page(기본값) | request | session | application
-
+- ==================================================
 ```js
 <jsp:setProperty name="bean이름" property="필드명" [value="설정값"] />
 ```
 - JavaBean의 프로퍼티에 값을 설정한다
 - DTO클래스의 setter를 실행하도록 되어있다
 	- DTO클래스에 setter가 정의되어있지 않으면 에러발생한다
+- ==================================================
 
 ```js
 <jsp:getProperty name="bean이름" property="필드명" />
@@ -225,6 +227,7 @@ ex)	<h1><%=emp.getEname() %></h1>
 - JavaBean의 프로퍼티의 값을 불러온다
 - DTO클래스의 getter를 실행하도록 되어있다
 	- DTO클래스에 getter가 정의되어있지 않으면 에러발생한다 
+- ==================================================
 
 ```js
 <jsp:forward page="이동할페이지" />
@@ -236,6 +239,7 @@ ex)	<h1><%=emp.getEname() %></h1>
     ```
     을 자식 태그로 추가한다
 - 포워딩된 페이지에서 request.getParameter("name")을 이용하여 전달파라미터를 사용할 수 있다
+- ==================================================
 
 ```js
 <jsp:include page="삽입할페이지URL" />
