@@ -40,9 +40,9 @@
 
 ### jQuery 스타일의 DOM객체 이용하는 코드
 ```js
-	$(document).ready(function() {
-	  //DOM객체 이용 가능
-	});
+$(document).ready(function() {
+  //DOM객체 이용 가능
+});
 ```
 
 ### jQuery 노드 객체 얻어오기
@@ -61,9 +61,9 @@
 
 ### 순차적으로 노드 접근하기 (반복문 API)
 ```js
-    $(객체).each( function ( idx, element ) {
-	//요소마다 각각 반복하면서 진행할 코드
-    })
+$(객체).each( function ( idx, element ) {
+//요소마다 각각 반복하면서 진행할 코드
+})
 ```
 - idx : 객체의 인덱스가 저장된다
 - element : 해당 반복의 JS DOM 객체가 저장된다
@@ -71,21 +71,21 @@
 
 ### 객체 비교하기
 ```js
-    $(객체1).is( $(객체2) )
+$(객체1).is( $(객체2) )
 ```
 - 객체1과 객체2가 같은 객체인지 비교한다
 - boolean값 반환
 
 ### 하위노드 중에서 특정 노드 찾기
 ```js
-    $(객체).find( "selector" )
+$(객체).find( "selector" )
 ```    
 - 객체의 하위 노드 중에서 selector에 해당하는 객체를 반환한다
 - 하위 선택자를 사용하는 것과 비슷하다
 
 ### 자식 노드 찾기
 ```js
-    $(객체).children()
+$(객체).children()
 ```
 - 자식노드들을 전부 반환한다
 
