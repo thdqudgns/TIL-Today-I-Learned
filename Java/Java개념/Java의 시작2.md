@@ -574,7 +574,7 @@ public void write(byte[] b, int off, int len) throws IOException
     - **IP Address**
         - 네트워크 상에서 각 노드의 위치를 나타내는 주소 체계
 	    - IP Protocol에 형식이 정의되어 있다
-	    - **32bit** DWORD타입으로 표현한다 (DWORD == 부호없는 정수 == 양수만 표현)
+	    - **32bit** DWORD타입으로 표현한다 (DWORD == 부호없는 정수 == 양수)
 	    - 32bit를 1B단위로 4자리로 나눠서 표현한다
 	    - 0-255.0-255.0-255.0-255
 	    ```java
