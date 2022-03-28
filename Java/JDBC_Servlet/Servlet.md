@@ -27,16 +27,13 @@ https://javaee.github.io/javaee-spec/javadocs/index.html?javax/servlet/package-s
 https://docs.oracle.com/javaee/7/api/index.html?javax/servlet/jsp/package-summary.html
 
 ### 서블릿의 동작 원리
-- 클라이언트 HTTP 요청 -> Apache Tomcat 서버( WEB서버 + WAS서버 )
-- -> 서블릿 컨테이너 -> URL매핑을 참고함 -> 서블릿 클래스 객체
-- -> 서블릿객체의 service() 메소드 호출됨 (요청Method를 확인한다)
-- -> 요청메소드에 따라 doGet() 또는 doPost() 메소드 호출
-- -> 서블릿 컨테이너
-- -> Apache Tomat 서버 -> 클라이언트 HTTP 응답
+클라이언트 HTTP 요청 -> Apache Tomcat 서버( WEB서버 + WAS서버 ) -> 서블릿 컨테이너   
+-> URL매핑을 참고함 -> 서블릿 클래스 객체 -> 서블릿객체의 service() 메소드 호출됨 (요청Method를 확인한다)   
+-> 요청메소드에 따라 doGet() 또는 doPost() 메소드 호출 -> 서블릿 컨테이너 -> Apache Tomat 서버 -> 클라이언트 HTTP 응답
 
 ### 서블릿 컨테이너, Servlet Container
-- 서블릿이 동작되는 환경을 구축하는 역할을 담담하는 소프트웨어 요소
-- 서블릿 객체를 생성하고 실행시켜주는 역할을 수행한다
+- 서블릿이 **동작되는 환경을 구축**하는 역할을 담담하는 소프트웨어 요소
+- **서블릿 객체를 생성하고 실행**시켜주는 역할을 수행한다
 - WAS서버와 서블릿 객체를 연결하는 중간다리 역할을 수행한다
 - 요청URL-Pattern 과 서블릿 객체를 1:1로 매핑해놓고 클라이언트의 요청에 따라 서블릿 객체를 실행시킨다 -> 매핑 테이블
 - 매핑 테이블은 web.xml(배포관리자) 또는 @WebServlet 어노테이션에 따라 작성된다
@@ -97,14 +94,13 @@ https://docs.oracle.com/javaee/7/api/index.html?javax/servlet/jsp/package-summar
 	- req.setCharacterEncoding("UTF-8");
 
 ### HTTP요청의 GET, POST 메소드
-> GET메소드는 서버의 자원을 조회할 때 사용한다 (SELECT)   
-POST메소드는 서버의 자원을 삽입,수정,삭제할 때 사용한다 (INSERT,UPDATE,DELETE)
+> GET메소드는 서버의 자원을 **조회**할 때 사용한다 (SELECT)   
+POST메소드는 서버의 자원을 **삽입,수정,삭제**할 때 사용한다 (INSERT,UPDATE,DELETE)
 
-> 전달파라미터가 짧은(단순한) 데이터이거나 없으면 GET방식을 사용한다   
-전달파라미터가 긴(복잡한) 데이터이거나 민감한 정보라면 POST방식을 사용한다
+> 전달파라미터가 **짧은(단순한)** 데이터이거나 없으면 GET방식을 사용한다   
+전달파라미터가 **긴(복잡한)** 데이터이거나 **민감한** 정보라면 POST방식을 사용한다
 
-> GET메소드는 URL뒤에 쿼리스트링으로 전달파라미터를 붙여서 서버로 전달한다   
-URL에 전달데이터가 노출된다
+> GET메소드는 URL뒤에 **쿼리스트링**으로 전달파라미터를 붙여서 서버로 전달하기에 URL에 전달데이터가 노출된다
 
-> POST메소드는 요청메시지의 BODY영역에 쿼리스트링으로 전달파라미터를 추가해서 서버로 전달한다   
+> POST메소드는 **요청메시지의 BODY영역에 쿼리스트링**으로 전달파라미터를 추가해서 서버로 전달한다   
 전달 데이터가 겉으로 노출되지 않는다
