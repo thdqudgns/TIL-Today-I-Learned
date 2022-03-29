@@ -38,56 +38,49 @@
     - applicationScope
 	- 각 컨텍스트 영역의 정보에 접근할 수 있는 객체
     ```jsp
-	ex)	<%=request.getAttribute("data") %>
-		-> ${requestScope.data }
+	ex)	<%=request.getAttribute("data") %> -> ${requestScope.data }
 
 		**EL의 Scope객체들은 생략가능하다
 
-		${requestScope.data }
-		-> ${data }
+		${requestScope.data } -> ${data }
 
 		**스코프를 지정하지 않고 컨텍스트 정보를 사용하면
 		 page->request->session->application 순으로 찾아서 사용한다
+		** 엄청 간단하고 편하네 
     ```
 - **param:** 전달파라미터에 접근할 수 있는 객체
     ```jsp
-	ex)	<%=request.getParameter("data") %>
-		-> ${param.data }
+	ex)	<%=request.getParameter("data") %> -> ${param.data }
     ```
 - **paramValues:** request.getParameterValues("name")의 기능을 수행하는 객체
     ```jsp
 	ex)	<% String[] genres = request.getParameterValues("genre"); %>
-		<%=genres[0] %>
-		<%=genres[1] %>
-
-		-> ${paramValues.genre[0] }
-		-> ${paramValues.genre[1] }
+		<%=genres[0] %> -> ${paramValues.genre[0] }
+		<%=genres[1] %> -> ${paramValues.genre[1] }
     ```
 - **header:** 요청 Header정보에 접근할 수 있는 객체
     ```jsp
-	ex)	<%=request.getHeader("host") %>
-		-> ${header.host }
+	ex)	<%=request.getHeader("host") %> -> ${header.host }
     ```
 - **headerValues:** 같은 이름의 Header정보에 접근할 수 있는 객체
     ```jsp
 	ex)	<% String[] datas = request.getHeaderValues("data"); %>
-		<%=datas[0] %>
-		<%=datas[1] %>
-
-		-> ${headerValues.data[0] }
-		-> ${headerValues.data[1] }
+		<%=datas[0] %> -> ${headerValues.data[0] }
+		<%=datas[1] %> -> ${headerValues.data[1] }
     ```
 - **cookie:** request.getCookie() 로 반환받은 Cookie[] 데이터를 Map으로 사용할 수 있도록 제공하는 객체
 - **initParam:** application.getInitParam("name")의 기능을 제공하는 객체
     - 초기화 파라미터, Initial Parameter
 	- 웹 어플리케이션에 설정된 기본 파라미터(변수, 설정값)
 
+---
+
 ### JSTL, JSP Standard Tag Library
 - JSP에서 사용 가능한 표준 태그 라이브러리
 - JSP코드의 가독성이 좋아진다
 - 자바코드로 작성해야하는 상황을 최소화시켜준다
-- 추가 라이브러리 파일이 필요하다
-- JSP페이지에서 taglib지시자를 이용하여 태그라이브러리를 활성화해야 한다
+- 추가 **라이브러리 파일이 필요하다**
+- **JSP페이지에서 taglib지시자를 이용하여 태그라이브러리를 활성화해야 한다**
 
 ### 다운 URL
 - http://archive.apache.org/dist/jakarta/taglibs/standard/binaries/
@@ -109,7 +102,7 @@
 	- 단독으로 태그만 사용할 수 없고 EL과 함 께 사용해야 한다
 
 ### JSTL taglib 지시자
-- JSTL 태그 라이브러리를 활성화시키는 지시자가 필요하다
+- JSTL 태그 라이브러리를 활성화시키는 [지시자](https://github.com/thdqudgns/TIL-Today-I-Learned/blob/main/Java/JDBC_Servlet/JSP.md#jsp-%EA%B8%B0%EB%B3%B8-%ED%83%9C%EA%B7%B8)가 필요하다
 - 형태
 ```jsp
 <%@ taglib prefix="접두어" uri="라이브러리식별값" %>
@@ -143,18 +136,16 @@
 	escapeXml="true|false" />
 
 	** escapeXml 속성
-	 true - < > & " ' 를 기호문자 그래도 출력(기본값)
+	 true - < > & " ' 를 기호문자 그대로 출력(기본값)
 	 false - 태그로 반영되어 출력
 ```
 - **c:set : JSP변수 등록, 설정(컨텍스트 영역에 등록된다)**
 ```jsp
   <c:set var="변수명" value="값" [scope="영역"] />
 
-  <c:set var="변수명" [scope="영역"]>
-	값
-  </c:set>
+  <c:set var="변수명" [scope="영역"]> 값 </c:set>
 
-	**scope: page(기본값) | request | session | application
+**scope: page(기본값) | request | session | application
 ```
 - **c:remove : JSP변수 제거**
 ```jsp
