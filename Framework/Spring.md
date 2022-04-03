@@ -672,6 +672,7 @@ Writer : 응답객체 출력스트림 (resp.getWriter())
 	- MVC 디자인 패턴을 유지한다
 
 ### 마이바티스 스프링에서 적용할만한 settings
+resources폴더 안의 mybatis-config.xml파일의 <configuration>태그 안에 작성한다
     ```java
 	<settings>
 		<!-- 컬럼의 Snake Case를 DTO의 Camel Case로 자동 변환하는 설정 -->
