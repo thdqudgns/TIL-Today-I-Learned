@@ -9,6 +9,8 @@ Spring Framework 개념을 정리했습니다.
 HTML, CSS, Javascript, jQuery 개념을 정리했습니다.
 - [DB](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/DB)   
 Oracle을 이용한 RDBMS 교육 내용 정리했습니다.
+- [Project](https://github.com/thdqudgns/portfolio)
+위의 교육 내용을 통해 두 번의 프로젝트를 진행한 자료입니다.
 - [자료구조_알고리즘](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)   
 [알고리즘 도감](https://book.naver.com/bookdb/book_detail.nhn?bid=13272714) 책을 보며 정리했습니다.   
 알고리즘 문제 풀이도 올릴 예정입니다.
