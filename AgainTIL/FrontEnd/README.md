@@ -36,6 +36,5 @@ CSS Editor 부분에 어떻게 선택자를 작성할 것인지 적으면 된다
 한 장의 이미지다.    
 선택자의 작성에 따라 무엇이 선택되는지 이미지로 재밌게 보여준다.
 
-## 3. [w3schools - CSS](https://www.w3schools.com/css/default.asp)
-## 4. [MDN - CSS](https://developer.mozilla.org/ko/docs/Web/CSS)
+## 3. [w3schools - CSS](https://www.w3schools.com/css/default.asp), [MDN - CSS](https://developer.mozilla.org/ko/docs/Web/CSS)
 HTML 파트에서 소개한 사이트들이다. HTML뿐만 아니라, CSS, JS 등 여러 가지 학습할 수 있다.
