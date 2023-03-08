@@ -26,8 +26,6 @@ HTML, CSS, Javascript, jQuery 개념을 정리했습니다.
 알고리즘 도감 책을 보며 정리했습니다.      
 2. **[Baekjoon](https://github.com/thdqudgns/Baekjoon)**   
 Baekjoon 도전기
-3. **[LeetCode](https://github.com/thdqudgns/LeetCode)**   
-LeetCode 도전기
 
 
 ## 🍞 OTHERS
