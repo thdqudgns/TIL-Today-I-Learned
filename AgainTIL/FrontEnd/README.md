@@ -38,3 +38,60 @@ CSS Editor 부분에 어떻게 선택자를 작성할 것인지 적으면 된다
 
 ## 3. [w3schools - CSS](https://www.w3schools.com/css/default.asp), [MDN - CSS](https://developer.mozilla.org/ko/docs/Web/CSS)
 HTML 파트에서 소개한 사이트들이다. HTML뿐만 아니라, CSS, JS 등 여러 가지 학습할 수 있다.
+
+## 23/03/09 학습 내용 : 
+- HTML 파일 안에 CSS를 적용하는 방법과 우선순위 :
+  1. 인라인
+   ```css
+   <li style="color: violet;">111</li>
+   ```
+  2. 내부 style 태그, link 태그를 이용한 외부 호출
+   ```css
+   <style>
+        li {
+            color: red;
+            background-color: antiquewhite;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="./exam01.css" />
+   ```
+
+- 선택자 우선순위 : 직접적인 선택일수록 올라감   
+id > class > 태그명
+
+- 글자 관련 속성 : 
+   - font-family : 글꼴
+   - font-size : 글자 크기
+   - font-weight : 글자 굵기
+   - text-decoration : 글자 꾸미기
+   
+- 정렬 관련 속성 :
+   - text-align
+   - text-indent
+   - line-height
+   - vertical-align
+   
+- 공간 관련 속성 :
+   - margin / padding : 외부 여백 / 내부 여백
+   - width / height : 폭 / 높이
+   - display
+   - float
+   - clear
+   - overflow
+   - text-overflow
+   - white-space
+   - min-height
+   - position, top / bottom / left / right
+   
+- 테두리 속성 : 
+   - border : 테두리 굵기, 모양, 색상
+   - border-collapse : 테두리 합치기
+   - border-radius : 테두리 둥글게
+
+- 그 외 속성 : 
+   - color : 글자색
+   - background-color : 배경색
+   - cursor : 마우스 포인터 변경
+   - list-style : li 태그의 모양
+   
