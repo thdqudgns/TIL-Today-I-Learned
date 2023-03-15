@@ -1,5 +1,3 @@
-1. [HTML](https://github.com/thdqudgns/TIL-Today-I-Learned/tree/main/AgainTIL/FrontEnd#-html-%ED%95%99%EC%8A%B5-%EB%B0%A9%EB%B2%95)
-
 # ⚓ HTML 학습 방법
 
 ## 1. [w3schools](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes1) 
@@ -19,11 +17,3 @@
 ## 평가
 > 둘 다 비슷한 방법으로 HTML을 학습할 수 있다.   
 개인적으로는 w3schoos가 밝고 깔끔해서 w3school를 이용했다.
-   
-   
----
-
-   
-
-   
-   
