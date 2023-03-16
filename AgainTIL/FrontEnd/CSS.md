@@ -91,7 +91,8 @@ HTML 파트에서 소개한 사이트들이다. HTML뿐만 아니라, CSS, JS �
    - white-space
    - min-height - 해당 공간의 최소 높이 지정
    - position(top / bottom / left / right 속성으로 위치 지정) - static, relative, absolute, fixed, sticky
-   - display: flex를 이용한 flex-box (관련 자료 - [네이버 D2](https://d2.naver.com/helloworld/8540176))
+   - ++ display: flex를 이용한 flex-box (관련 자료 - [네이버 D2](https://d2.naver.com/helloworld/8540176))
+     ++ flex-box Game: 1. [개구리](https://flexboxfroggy.com/#ko) 2. [타워디펜스](http://www.flexboxdefense.com/)
    
 - 테두리 속성 : 
    - border : 테두리 굵기, 모양, 색상
