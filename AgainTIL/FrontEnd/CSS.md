@@ -6,9 +6,10 @@ CSS Editor 부분에 어떻게 선택자를 작성할 것인지 적으면 된다
 오른쪽에는 어떻게 푸는지 **Hint** 까지 주어진다.   
 <img src="https://user-images.githubusercontent.com/92148521/223777811-4374ad00-e6e5-4e7f-8bc0-efb8a8a29387.png" width=600px />
 
-## 2. [선택자 이미지](https://specifishity.com/)
-한 장의 이미지다.    
-선택자의 작성에 따라 무엇이 선택되는지 이미지로 재밌게 보여준다.
+## 2. 선택자 이미지
+한 장의 이미지다. 선택자의 작성에 따라 무엇이 선택되는지 이미지로 재밌게 보여준다.   
+<img src="https://user-images.githubusercontent.com/92148521/225666564-25710141-d30a-4c83-9f40-d3ee4e6a8b69.png" width=800px />
+
 
 ## 3. [w3schools - CSS](https://www.w3schools.com/css/default.asp), [MDN - CSS](https://developer.mozilla.org/ko/docs/Web/CSS)
 HTML 파트에서 소개한 사이트들이다. HTML뿐만 아니라, CSS, JS 등 여러 가지 학습할 수 있다.
