@@ -88,7 +88,7 @@ HTML 파트에서 소개한 사이트들이다. HTML뿐만 아니라, CSS, JS �
    - min-height - 해당 공간의 최소 높이 지정
    - position(top / bottom / left / right 속성으로 위치 지정) - static, relative, absolute, fixed, sticky
    - display: block, inline, inline-block, flex, inline-flex
-      - 부모속성: flex-direction(주축의 기준), flex-wrap, justify-content(주축기준 자식정렬), align-items(교차축 기준 자식정렬), align-content
+      - 부모속성: flex-direction(주축의 기준), flex-wrap(줄 바꾸기), justify-content(주축기준 자식정렬), align-items(교차축 기준 자식정렬), align-content
       - 자식속성: flex, flex-grow(확장), flex-shrink(축소), flex-basis(기본크기), order(순서)
       - flex를 이용한 flex-box (관련 자료 - [네이버 D2](https://d2.naver.com/helloworld/8540176))
       - flex-box Game: 1. [개구리](https://flexboxfroggy.com/#ko) 2. [타워디펜스](http://www.flexboxdefense.com/)
