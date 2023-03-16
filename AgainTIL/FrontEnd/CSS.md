@@ -1,9 +1,10 @@
 # 🧮 CSS 학습 방법
 
 ## 1. 선택자 공부하기 [CSS Diner](https://flukeout.github.io/)
-CSS Editor 부분에 어떻게 선택자를 작성할 것인지 적으면 된다. 이를 통해 CSS 에서 어려운 부분 중 하나인 선택자에 대해 학습할 수 있다.   
+CSS Editor 부분에 어떻게 선택자를 작성할 것인지 적으면 된다.   
+이를 통해 CSS 에서 어려운 부분 중 하나인 선택자에 대해 학습할 수 있다.   
 오른쪽에는 어떻게 푸는지 **Hint** 까지 주어진다.
-![image](https://user-images.githubusercontent.com/92148521/223777811-4374ad00-e6e5-4e7f-8bc0-efb8a8a29387.png)
+<img src="https://user-images.githubusercontent.com/92148521/223777811-4374ad00-e6e5-4e7f-8bc0-efb8a8a29387.png" width=600px />
 
 ## 2. [선택자 이미지](https://specifishity.com/)
 한 장의 이미지다.    
