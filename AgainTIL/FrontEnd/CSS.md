@@ -94,6 +94,7 @@ HTML 파트에서 소개한 사이트들이다. HTML뿐만 아니라, CSS, JS �
       - flex-box Game: 1. [개구리](https://flexboxfroggy.com/#ko) 2. [타워디펜스](http://www.flexboxdefense.com/)
    - float - 띄우기
    - clear - float를 해결: left, right, both   
+      
    말줄임을 하는 세가지
    - overflow: hidden;
    - text-overflow: ellipsis;
