@@ -4,6 +4,8 @@ HTML은 웹 페이지를 구성하는 기본 틀이다. 어떻게 공부하는 �
 HTML을 공부해보니 사용하다 보면 저절로 외워진다. 그러니 암기하려고 하기보다 많이 만들어보면 된다.   
 가장 많이 쓰이는 HTML 태그들과 웹 페이지의 구성에 대해 간단히 알아보고, 나머지는 공부하기 좋은 사이트에서 추가적으로 익히자.
 
+<img src="https://user-images.githubusercontent.com/92148521/225475821-baf050da-6a03-4ed4-a349-2553fe1d2c01.png" width=600px />
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
